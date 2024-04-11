@@ -1,0 +1,8 @@
+module ContextFree
+  class RNG
+    @prng: Random
+
+    def initialize: (?Integer? seed) -> void
+    def next: () -> Float
+  end
+end

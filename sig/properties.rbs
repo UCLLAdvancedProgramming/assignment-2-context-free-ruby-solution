@@ -1,0 +1,17 @@
+module ContextFree
+  class Properties
+    def self.default: () -> Properties
+
+    attr_accessor transform: Transform
+    attr_accessor color: Color
+
+    def initialize: (Transform transform, Color color) -> void
+    def adjust: (Adjustment adjustment) -> Properties
+    def adjust!: (Adjustment adjustment) -> void
+
+    private
+
+    def adjust_transform!: (Adjustment adjustment) -> void
+    def adjust_color!: (Adjustment adjustment) -> void
+  end
+end

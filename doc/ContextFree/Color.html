@@ -1,0 +1,3430 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+  Class: ContextFree::Color
+  
+    &mdash; Documentation by YARD 0.9.36
+  
+</title>
+
+  <link rel="stylesheet" href="../css/style.css" type="text/css" />
+
+  <link rel="stylesheet" href="../css/common.css" type="text/css" />
+
+<script type="text/javascript">
+  pathId = "ContextFree::Color";
+  relpath = '../';
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="../js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="../js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div class="nav_wrap">
+      <iframe id="nav" src="../class_list.html?1"></iframe>
+      <div id="resizer"></div>
+    </div>
+
+    <div id="main" tabindex="-1">
+      <div id="header">
+        <div id="menu">
+  
+    <a href="../_index.html">Index (C)</a> &raquo;
+    <span class='title'><span class='object_link'><a href="../ContextFree.html" title="ContextFree (module)">ContextFree</a></span></span>
+     &raquo; 
+    <span class="title">Color</span>
+  
+</div>
+
+        <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="../class_list.html">
+
+        <svg width="24" height="24">
+          <rect x="0" y="4" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="12" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="20" width="24" height="4" rx="1" ry="1"></rect>
+        </svg>
+    </a>
+  
+</div>
+        <div class="clear"></div>
+      </div>
+
+      <div id="content"><h1>Class: ContextFree::Color
+  
+  
+  
+</h1>
+<div class="box_info">
+  
+  <dl>
+    <dt>Inherits:</dt>
+    <dd>
+      <span class="inheritName">Object</span>
+      
+        <ul class="fullTree">
+          <li>Object</li>
+          
+            <li class="next">ContextFree::Color</li>
+          
+        </ul>
+        <a href="#" class="inheritanceTree">show all</a>
+      
+    </dd>
+  </dl>
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+  <dl>
+    <dt>Defined in:</dt>
+    <dd>src/color.rb</dd>
+  </dl>
+  
+</div>
+
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    The Color class represents a color in HSV (or HSB) form, with alpha:
+
+- hue
+- saturation
+- brightness
+- alpha (0 for completely transparent i.e. invisible, 1 for opaque)
+
+  </div>
+</div>
+<div class="tags">
+  
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><a href="https://en.wikipedia.org/wiki/HSL_and_HSV" target="_parent" title="https://en.wikipedia.org/wiki/HSL_and_HSV">https://en.wikipedia.org/wiki/HSL_and_HSV</a></li>
+    
+  </ul>
+
+</div>
+
+
+
+  <h2>Instance Attribute Summary <small><a href="#" class="summary_toggle">collapse</a></small></h2>
+  <ul class="summary">
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#alpha-instance_method" title="#alpha (instance method)">#<strong>alpha</strong>  &#x21d2; Float </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+      <span class="note title readonly">readonly</span>
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>The alpha value from 0 to 1 (0 is completely transparent (invisible), 1 is opaque).</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#brightness-instance_method" title="#brightness (instance method)">#<strong>brightness</strong>  &#x21d2; Float </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+      <span class="note title readonly">readonly</span>
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>The brightness value from 0 to 1 (this is the V in HSV, or the B in HSB).</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#hue-instance_method" title="#hue (instance method)">#<strong>hue</strong>  &#x21d2; Float </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+      <span class="note title readonly">readonly</span>
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>The hue in &quot;degrees&quot; in the range +[0, 360)+.</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#saturation-instance_method" title="#saturation (instance method)">#<strong>saturation</strong>  &#x21d2; Float </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+      <span class="note title readonly">readonly</span>
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>The saturation from 0 to 1.</div></span>
+  
+</li>
+
+    
+  </ul>
+
+
+
+
+  
+    <h2>
+      Class Method Summary
+      <small><a href="#" class="summary_toggle">collapse</a></small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#adjust-class_method" title="adjust (class method)">.<strong>adjust</strong>(base, adjustment)  &#x21d2; Float </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>Applies the given adjustment (-1 to 1) to the given base value (0 to 1).</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#black-class_method" title="black (class method)">.<strong>black</strong>  &#x21d2; Color </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>Returns black.</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#blue-class_method" title="blue (class method)">.<strong>blue</strong>  &#x21d2; Color </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>Returns blue.</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#cyan-class_method" title="cyan (class method)">.<strong>cyan</strong>  &#x21d2; Color </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>Returns cyan.</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#green-class_method" title="green (class method)">.<strong>green</strong>  &#x21d2; Color </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>Returns green.</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#magenta-class_method" title="magenta (class method)">.<strong>magenta</strong>  &#x21d2; Color </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>Returns magenta.</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#orange-class_method" title="orange (class method)">.<strong>orange</strong>  &#x21d2; Color </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>Returns orange.</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#red-class_method" title="red (class method)">.<strong>red</strong>  &#x21d2; Color </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>Returns red.</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#white-class_method" title="white (class method)">.<strong>white</strong>  &#x21d2; Color </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>Returns white.</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#yellow-class_method" title="yellow (class method)">.<strong>yellow</strong>  &#x21d2; Color </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>Returns yellow.</div></span>
+  
+</li>
+
+      
+    </ul>
+  
+    <h2>
+      Instance Method Summary
+      <small><a href="#" class="summary_toggle">collapse</a></small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#==-instance_method" title="#== (instance method)">#<strong>==</strong>(other)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#add_alpha-instance_method" title="#add_alpha (instance method)">#<strong>add_alpha</strong>(alpha)  &#x21d2; Color </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>Adjust the alpha value, returning a new color.</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#add_brightness-instance_method" title="#add_brightness (instance method)">#<strong>add_brightness</strong>(b)  &#x21d2; Color </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>Adjust the brightness value, returning a new color.</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#add_hue-instance_method" title="#add_hue (instance method)">#<strong>add_hue</strong>(h)  &#x21d2; Color </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>Add the given value to the hue, returning a new color.</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#add_saturation-instance_method" title="#add_saturation (instance method)">#<strong>add_saturation</strong>(sat)  &#x21d2; Color </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>Adjust the saturation value, returning a new color.</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#initialize-instance_method" title="#initialize (instance method)">#<strong>initialize</strong>(hue:, saturation:, brightness:, alpha: 1.0)  &#x21d2; Color </a>
+    
+
+    
+  </span>
+  
+  
+    <span class="note title constructor">constructor</span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>Creates a new color with given hue, saturation, brightness and alpha.</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#to_rgba-instance_method" title="#to_rgba (instance method)">#<strong>to_rgba</strong>  &#x21d2; Array&lt;Float&gt; </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>Converts the color to RGBA (with R, G, B, and A from 0 to 1).</div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+<div id="constructor_details" class="method_details_list">
+  <h2>Constructor Details</h2>
+  
+    <div class="method_details first">
+  <h3 class="signature first" id="initialize-instance_method">
+  
+    #<strong>initialize</strong>(hue:, saturation:, brightness:, alpha: 1.0)  &#x21d2; <tt><span class='object_link'><a href="" title="ContextFree::Color (class)">Color</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    Creates a new color with given hue, saturation, brightness and alpha
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>hue</span>
+      
+      
+        <span class='type'>(<tt>Float</tt>, <tt>Integer</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>the hue in the range +[0, 360)+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>saturation</span>
+      
+      
+        <span class='type'>(<tt>Float</tt>, <tt>Integer</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>the saturation from 0 to 1</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>brightness</span>
+      
+      
+        <span class='type'>(<tt>Float</tt>, <tt>Integer</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>the brightness from 0 to 1</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>alpha</span>
+      
+      
+        <span class='type'>(<tt>Float</tt>, <tt>Integer</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>1.0</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>the alpha value from 0 to 1</div>
+      
+    </li>
+  
+</ul>
+
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+112
+113
+114
+115
+116
+117
+118</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'src/color.rb', line 112</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_initialize'>initialize</span><span class='lparen'>(</span><span class='label'>hue:</span><span class='comma'>,</span> <span class='label'>saturation:</span><span class='comma'>,</span> <span class='label'>brightness:</span><span class='comma'>,</span> <span class='label'>alpha:</span> <span class='float'>1.0</span><span class='rparen'>)</span>
+  <span class='ivar'>@hue</span> <span class='op'>=</span> <span class='id identifier rubyid_hue'>hue</span> <span class='op'>%</span> <span class='float'>360.0</span>
+  <span class='ivar'>@saturation</span> <span class='op'>=</span> <span class='id identifier rubyid_saturation'>saturation</span><span class='period'>.</span><span class='id identifier rubyid_to_f'>to_f</span><span class='period'>.</span><span class='id identifier rubyid_clamp'>clamp</span><span class='lparen'>(</span><span class='float'>0.0</span><span class='comma'>,</span> <span class='float'>1.0</span><span class='rparen'>)</span>
+  <span class='ivar'>@brightness</span> <span class='op'>=</span> <span class='id identifier rubyid_brightness'>brightness</span><span class='period'>.</span><span class='id identifier rubyid_to_f'>to_f</span><span class='period'>.</span><span class='id identifier rubyid_clamp'>clamp</span><span class='lparen'>(</span><span class='float'>0.0</span><span class='comma'>,</span> <span class='float'>1.0</span><span class='rparen'>)</span>
+  <span class='ivar'>@alpha</span> <span class='op'>=</span> <span class='id identifier rubyid_alpha'>alpha</span><span class='period'>.</span><span class='id identifier rubyid_to_f'>to_f</span><span class='period'>.</span><span class='id identifier rubyid_clamp'>clamp</span><span class='lparen'>(</span><span class='float'>0.0</span><span class='comma'>,</span> <span class='float'>1.0</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_freeze'>freeze</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+  
+</div>
+
+  <div id="instance_attr_details" class="attr_details">
+    <h2>Instance Attribute Details</h2>
+    
+      
+      <span id=""></span>
+      <div class="method_details first">
+  <h3 class="signature first" id="alpha-instance_method">
+  
+    #<strong>alpha</strong>  &#x21d2; <tt>Float</tt>  <span class="extras">(readonly)</span>
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    Returns the alpha value from 0 to 1 (0 is completely transparent (invisible), 1 is opaque).
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Float</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>the alpha value from 0 to 1 (0 is completely transparent (invisible), 1 is opaque)</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+180
+181
+182
+183
+184
+185
+186
+187
+188
+189
+190
+191
+192
+193
+194
+195
+196
+197
+198
+199
+200</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'src/color.rb', line 22</span>
+
+<span class='kw'>class</span> <span class='const'><span class='object_link'><a href="" title="ContextFree::Color (class)">Color</a></span></span>
+  <span class='kw'>class</span> <span class='op'>&lt;&lt;</span> <span class='kw'>self</span>
+    <span class='comment'># Returns black
+</span>    <span class='comment'># @return [Color]
+</span>    <span class='kw'>def</span> <span class='id identifier rubyid_black'>black</span>
+      <span class='const'><span class='object_link'><a href="" title="ContextFree::Color (class)">Color</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="#initialize-instance_method" title="ContextFree::Color#initialize (method)">new</a></span></span> <span class='label'>hue:</span> <span class='int'>0</span><span class='comma'>,</span> <span class='label'>saturation:</span> <span class='int'>0</span><span class='comma'>,</span> <span class='label'>brightness:</span> <span class='int'>0</span><span class='comma'>,</span> <span class='label'>alpha:</span> <span class='int'>1</span>
+    <span class='kw'>end</span>
+
+    <span class='comment'># Returns white
+</span>    <span class='comment'># @return [Color]
+</span>    <span class='kw'>def</span> <span class='id identifier rubyid_white'>white</span>
+      <span class='const'><span class='object_link'><a href="" title="ContextFree::Color (class)">Color</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="#initialize-instance_method" title="ContextFree::Color#initialize (method)">new</a></span></span> <span class='label'>hue:</span> <span class='int'>0</span><span class='comma'>,</span> <span class='label'>saturation:</span> <span class='int'>0</span><span class='comma'>,</span> <span class='label'>brightness:</span> <span class='int'>1</span><span class='comma'>,</span> <span class='label'>alpha:</span> <span class='int'>1</span>
+    <span class='kw'>end</span>
+
+    <span class='comment'># Returns red
+</span>    <span class='comment'># @return [Color]
+</span>    <span class='kw'>def</span> <span class='id identifier rubyid_red'>red</span>
+      <span class='const'><span class='object_link'><a href="" title="ContextFree::Color (class)">Color</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="#initialize-instance_method" title="ContextFree::Color#initialize (method)">new</a></span></span> <span class='label'>hue:</span> <span class='int'>0</span><span class='comma'>,</span> <span class='label'>saturation:</span> <span class='int'>1</span><span class='comma'>,</span> <span class='label'>brightness:</span> <span class='int'>1</span><span class='comma'>,</span> <span class='label'>alpha:</span> <span class='int'>1</span>
+    <span class='kw'>end</span>
+
+    <span class='comment'># Returns orange
+</span>    <span class='comment'># @return [Color]
+</span>    <span class='kw'>def</span> <span class='id identifier rubyid_orange'>orange</span>
+      <span class='const'><span class='object_link'><a href="" title="ContextFree::Color (class)">Color</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="#initialize-instance_method" title="ContextFree::Color#initialize (method)">new</a></span></span> <span class='label'>hue:</span> <span class='int'>30</span><span class='comma'>,</span> <span class='label'>saturation:</span> <span class='int'>1</span><span class='comma'>,</span> <span class='label'>brightness:</span> <span class='int'>1</span><span class='comma'>,</span> <span class='label'>alpha:</span> <span class='int'>1</span>
+    <span class='kw'>end</span>
+
+    <span class='comment'># Returns yellow
+</span>    <span class='comment'># @return [Color]
+</span>    <span class='kw'>def</span> <span class='id identifier rubyid_yellow'>yellow</span>
+      <span class='const'><span class='object_link'><a href="" title="ContextFree::Color (class)">Color</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="#initialize-instance_method" title="ContextFree::Color#initialize (method)">new</a></span></span> <span class='label'>hue:</span> <span class='int'>60</span><span class='comma'>,</span> <span class='label'>saturation:</span> <span class='int'>1</span><span class='comma'>,</span> <span class='label'>brightness:</span> <span class='int'>1</span><span class='comma'>,</span> <span class='label'>alpha:</span> <span class='int'>1</span>
+    <span class='kw'>end</span>
+
+    <span class='comment'># Returns green
+</span>    <span class='comment'># @return [Color]
+</span>    <span class='kw'>def</span> <span class='id identifier rubyid_green'>green</span>
+      <span class='const'><span class='object_link'><a href="" title="ContextFree::Color (class)">Color</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="#initialize-instance_method" title="ContextFree::Color#initialize (method)">new</a></span></span> <span class='label'>hue:</span> <span class='int'>120</span><span class='comma'>,</span> <span class='label'>saturation:</span> <span class='int'>1</span><span class='comma'>,</span> <span class='label'>brightness:</span> <span class='int'>1</span><span class='comma'>,</span> <span class='label'>alpha:</span> <span class='int'>1</span>
+    <span class='kw'>end</span>
+
+    <span class='comment'># Returns cyan
+</span>    <span class='comment'># @return [Color]
+</span>    <span class='kw'>def</span> <span class='id identifier rubyid_cyan'>cyan</span>
+      <span class='const'><span class='object_link'><a href="" title="ContextFree::Color (class)">Color</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="#initialize-instance_method" title="ContextFree::Color#initialize (method)">new</a></span></span> <span class='label'>hue:</span> <span class='int'>180</span><span class='comma'>,</span> <span class='label'>saturation:</span> <span class='int'>1</span><span class='comma'>,</span> <span class='label'>brightness:</span> <span class='int'>1</span><span class='comma'>,</span> <span class='label'>alpha:</span> <span class='int'>1</span>
+    <span class='kw'>end</span>
+
+    <span class='comment'># Returns blue
+</span>    <span class='comment'># @return [Color]
+</span>    <span class='kw'>def</span> <span class='id identifier rubyid_blue'>blue</span>
+      <span class='const'><span class='object_link'><a href="" title="ContextFree::Color (class)">Color</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="#initialize-instance_method" title="ContextFree::Color#initialize (method)">new</a></span></span> <span class='label'>hue:</span> <span class='int'>240</span><span class='comma'>,</span> <span class='label'>saturation:</span> <span class='int'>1</span><span class='comma'>,</span> <span class='label'>brightness:</span> <span class='int'>1</span><span class='comma'>,</span> <span class='label'>alpha:</span> <span class='int'>1</span>
+    <span class='kw'>end</span>
+
+    <span class='comment'># Returns magenta
+</span>    <span class='comment'># @return [Color]
+</span>    <span class='kw'>def</span> <span class='id identifier rubyid_magenta'>magenta</span>
+      <span class='const'><span class='object_link'><a href="" title="ContextFree::Color (class)">Color</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="#initialize-instance_method" title="ContextFree::Color#initialize (method)">new</a></span></span> <span class='label'>hue:</span> <span class='int'>300</span><span class='comma'>,</span> <span class='label'>saturation:</span> <span class='int'>1</span><span class='comma'>,</span> <span class='label'>brightness:</span> <span class='int'>1</span><span class='comma'>,</span> <span class='label'>alpha:</span> <span class='int'>1</span>
+    <span class='kw'>end</span>
+
+    <span class='comment'>##
+</span>    <span class='comment'># Applies the given adjustment (-1 to 1) to the given base value (0 to 1)
+</span>    <span class='comment'>#
+</span>    <span class='comment'># - an +adjustment+ of 0 returns +base+, unchanged
+</span>    <span class='comment'># - a negative adjustment moves the base value closer to 0,
+</span>    <span class='comment'>#   e.g. starting at 0.8 with an adjustment of -0.5 takes away 50% of 0.8,
+</span>    <span class='comment'>#   resulting in 0.4.
+</span>    <span class='comment'># - a positive adjustment moves the base value closer to 1,
+</span>    <span class='comment'>#   e.g. starting at 0.8 with an adjustment of 0.5 adds 50% of 0.2 (this is 1 - 0.8),
+</span>    <span class='comment'>#   resulting in 0.9
+</span>    <span class='comment'>#
+</span>    <span class='comment'># @param base [Float] the base value (0 to 1)
+</span>    <span class='comment'># @param adjustment [Float] the adjustment value (-1 to 1)
+</span>    <span class='comment'># @return [Float] the adjusted value
+</span>    <span class='kw'>def</span> <span class='id identifier rubyid_adjust'>adjust</span><span class='lparen'>(</span><span class='id identifier rubyid_base'>base</span><span class='comma'>,</span> <span class='id identifier rubyid_adjustment'>adjustment</span><span class='rparen'>)</span>
+      <span class='kw'>if</span> <span class='id identifier rubyid_adjustment'>adjustment</span><span class='period'>.</span><span class='id identifier rubyid_zero?'>zero?</span>
+        <span class='id identifier rubyid_base'>base</span>
+      <span class='kw'>elsif</span> <span class='id identifier rubyid_adjustment'>adjustment</span><span class='period'>.</span><span class='id identifier rubyid_negative?'>negative?</span>
+        <span class='id identifier rubyid_base'>base</span> <span class='op'>+</span> <span class='id identifier rubyid_base'>base</span> <span class='op'>*</span> <span class='id identifier rubyid_adjustment'>adjustment</span>
+      <span class='kw'>else</span>
+        <span class='id identifier rubyid_base'>base</span> <span class='op'>+</span> <span class='lparen'>(</span><span class='int'>1</span> <span class='op'>-</span> <span class='id identifier rubyid_base'>base</span><span class='rparen'>)</span> <span class='op'>*</span> <span class='id identifier rubyid_adjustment'>adjustment</span>
+      <span class='kw'>end</span>
+    <span class='kw'>end</span>
+  <span class='kw'>end</span>
+
+  <span class='id identifier rubyid_attr_reader'>attr_reader</span> <span class='symbol'>:hue</span><span class='comma'>,</span> <span class='symbol'>:saturation</span><span class='comma'>,</span> <span class='symbol'>:brightness</span><span class='comma'>,</span> <span class='symbol'>:alpha</span>
+
+  <span class='comment'>##
+</span>  <span class='comment'># Creates a new color with given hue, saturation, brightness and alpha
+</span>  <span class='comment'>#
+</span>  <span class='comment'># @param hue [Float, Integer] the hue in the range +[0, 360)+
+</span>  <span class='comment'># @param saturation [Float, Integer] the saturation from 0 to 1
+</span>  <span class='comment'># @param brightness [Float, Integer] the brightness from 0 to 1
+</span>  <span class='comment'># @param alpha [Float, Integer] the alpha value from 0 to 1
+</span>  <span class='kw'>def</span> <span class='id identifier rubyid_initialize'>initialize</span><span class='lparen'>(</span><span class='label'>hue:</span><span class='comma'>,</span> <span class='label'>saturation:</span><span class='comma'>,</span> <span class='label'>brightness:</span><span class='comma'>,</span> <span class='label'>alpha:</span> <span class='float'>1.0</span><span class='rparen'>)</span>
+    <span class='ivar'>@hue</span> <span class='op'>=</span> <span class='id identifier rubyid_hue'>hue</span> <span class='op'>%</span> <span class='float'>360.0</span>
+    <span class='ivar'>@saturation</span> <span class='op'>=</span> <span class='id identifier rubyid_saturation'>saturation</span><span class='period'>.</span><span class='id identifier rubyid_to_f'>to_f</span><span class='period'>.</span><span class='id identifier rubyid_clamp'>clamp</span><span class='lparen'>(</span><span class='float'>0.0</span><span class='comma'>,</span> <span class='float'>1.0</span><span class='rparen'>)</span>
+    <span class='ivar'>@brightness</span> <span class='op'>=</span> <span class='id identifier rubyid_brightness'>brightness</span><span class='period'>.</span><span class='id identifier rubyid_to_f'>to_f</span><span class='period'>.</span><span class='id identifier rubyid_clamp'>clamp</span><span class='lparen'>(</span><span class='float'>0.0</span><span class='comma'>,</span> <span class='float'>1.0</span><span class='rparen'>)</span>
+    <span class='ivar'>@alpha</span> <span class='op'>=</span> <span class='id identifier rubyid_alpha'>alpha</span><span class='period'>.</span><span class='id identifier rubyid_to_f'>to_f</span><span class='period'>.</span><span class='id identifier rubyid_clamp'>clamp</span><span class='lparen'>(</span><span class='float'>0.0</span><span class='comma'>,</span> <span class='float'>1.0</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_freeze'>freeze</span>
+  <span class='kw'>end</span>
+
+  <span class='comment'>##
+</span>  <span class='comment'># Add the given value to the hue, returning a new color.
+</span>  <span class='comment'>#
+</span>  <span class='comment'># The resulting hue is the current hue plus the given value mod 360.0.
+</span>  <span class='comment'>#
+</span>  <span class='comment'># @param h [Float, Integer] the value to add
+</span>  <span class='comment'># @return [Color]
+</span>  <span class='kw'>def</span> <span class='id identifier rubyid_add_hue'>add_hue</span><span class='lparen'>(</span><span class='id identifier rubyid_h'>h</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_new_hue'>new_hue</span> <span class='op'>=</span> <span class='lparen'>(</span><span class='ivar'>@hue</span> <span class='op'>+</span> <span class='id identifier rubyid_h'>h</span><span class='period'>.</span><span class='id identifier rubyid_to_f'>to_f</span><span class='rparen'>)</span> <span class='op'>%</span> <span class='float'>360.0</span>
+    <span class='const'><span class='object_link'><a href="" title="ContextFree::Color (class)">Color</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="#initialize-instance_method" title="ContextFree::Color#initialize (method)">new</a></span></span><span class='lparen'>(</span><span class='label'>hue:</span> <span class='id identifier rubyid_new_hue'>new_hue</span><span class='comma'>,</span> <span class='label'>saturation:</span> <span class='id identifier rubyid_saturation'>saturation</span><span class='comma'>,</span> <span class='label'>brightness:</span> <span class='id identifier rubyid_brightness'>brightness</span><span class='comma'>,</span> <span class='label'>alpha:</span> <span class='id identifier rubyid_alpha'>alpha</span><span class='rparen'>)</span>
+  <span class='kw'>end</span>
+
+  <span class='comment'>##
+</span>  <span class='comment'># Adjust the saturation value, returning a new color.
+</span>  <span class='comment'>#
+</span>  <span class='comment'># @see Color::adjust
+</span>  <span class='comment'>#
+</span>  <span class='comment'># @param sat [Float, Integer] the adjustment from -1 to 1 (negative moves it closer to 0, positive moves it closer to 1)
+</span>  <span class='comment'># @return [Color]
+</span>  <span class='kw'>def</span> <span class='id identifier rubyid_add_saturation'>add_saturation</span><span class='lparen'>(</span><span class='id identifier rubyid_sat'>sat</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_sat'>sat</span> <span class='op'>=</span> <span class='id identifier rubyid_sat'>sat</span><span class='period'>.</span><span class='id identifier rubyid_to_f'>to_f</span><span class='period'>.</span><span class='id identifier rubyid_clamp'>clamp</span><span class='lparen'>(</span><span class='op'>-</span><span class='float'>1.0</span><span class='comma'>,</span> <span class='float'>1.0</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_new_sat'>new_sat</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="" title="ContextFree::Color (class)">Color</a></span></span><span class='period'>.</span><span class='id identifier rubyid_adjust'><span class='object_link'><a href="#adjust-class_method" title="ContextFree::Color.adjust (method)">adjust</a></span></span> <span class='id identifier rubyid_saturation'>saturation</span><span class='comma'>,</span> <span class='id identifier rubyid_sat'>sat</span>
+    <span class='const'><span class='object_link'><a href="" title="ContextFree::Color (class)">Color</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="#initialize-instance_method" title="ContextFree::Color#initialize (method)">new</a></span></span><span class='lparen'>(</span><span class='label'>hue:</span> <span class='id identifier rubyid_hue'>hue</span><span class='comma'>,</span> <span class='label'>saturation:</span> <span class='id identifier rubyid_new_sat'>new_sat</span><span class='comma'>,</span> <span class='label'>brightness:</span> <span class='id identifier rubyid_brightness'>brightness</span><span class='comma'>,</span> <span class='label'>alpha:</span> <span class='id identifier rubyid_alpha'>alpha</span><span class='rparen'>)</span>
+  <span class='kw'>end</span>
+
+  <span class='comment'>##
+</span>  <span class='comment'># Adjust the brightness value, returning a new color.
+</span>  <span class='comment'>#
+</span>  <span class='comment'># @see Color::adjust
+</span>  <span class='comment'>#
+</span>  <span class='comment'># @param b [Float, Integer] the adjustment from -1 to 1 (negative moves it closer to 0, positive moves it closer to 1)
+</span>  <span class='comment'># @return [Color]
+</span>  <span class='kw'>def</span> <span class='id identifier rubyid_add_brightness'>add_brightness</span><span class='lparen'>(</span><span class='id identifier rubyid_b'>b</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_b'>b</span> <span class='op'>=</span> <span class='id identifier rubyid_b'>b</span><span class='period'>.</span><span class='id identifier rubyid_to_f'>to_f</span><span class='period'>.</span><span class='id identifier rubyid_clamp'>clamp</span><span class='lparen'>(</span><span class='op'>-</span><span class='float'>1.0</span><span class='comma'>,</span> <span class='float'>1.0</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_new_b'>new_b</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="" title="ContextFree::Color (class)">Color</a></span></span><span class='period'>.</span><span class='id identifier rubyid_adjust'><span class='object_link'><a href="#adjust-class_method" title="ContextFree::Color.adjust (method)">adjust</a></span></span> <span class='id identifier rubyid_brightness'>brightness</span><span class='comma'>,</span> <span class='id identifier rubyid_b'>b</span>
+    <span class='const'><span class='object_link'><a href="" title="ContextFree::Color (class)">Color</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="#initialize-instance_method" title="ContextFree::Color#initialize (method)">new</a></span></span><span class='lparen'>(</span><span class='label'>hue:</span> <span class='id identifier rubyid_hue'>hue</span><span class='comma'>,</span> <span class='label'>saturation:</span> <span class='id identifier rubyid_saturation'>saturation</span><span class='comma'>,</span> <span class='label'>brightness:</span> <span class='id identifier rubyid_new_b'>new_b</span><span class='comma'>,</span> <span class='label'>alpha:</span> <span class='id identifier rubyid_alpha'>alpha</span><span class='rparen'>)</span>
+  <span class='kw'>end</span>
+
+  <span class='comment'>##
+</span>  <span class='comment'># Adjust the alpha value, returning a new color.
+</span>  <span class='comment'>#
+</span>  <span class='comment'># @see Color::adjust
+</span>  <span class='comment'>#
+</span>  <span class='comment'># @param alpha [Float, Integer] the adjustment from -1 to 1 (negative moves it closer to 0, positive moves it closer to 1)
+</span>  <span class='comment'># @return [Color]
+</span>  <span class='kw'>def</span> <span class='id identifier rubyid_add_alpha'>add_alpha</span><span class='lparen'>(</span><span class='id identifier rubyid_alpha'>alpha</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_alpha'>alpha</span> <span class='op'>=</span> <span class='id identifier rubyid_alpha'>alpha</span><span class='period'>.</span><span class='id identifier rubyid_to_f'>to_f</span><span class='period'>.</span><span class='id identifier rubyid_clamp'>clamp</span><span class='lparen'>(</span><span class='op'>-</span><span class='float'>1.0</span><span class='comma'>,</span> <span class='float'>1.0</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_new_alpha'>new_alpha</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="" title="ContextFree::Color (class)">Color</a></span></span><span class='period'>.</span><span class='id identifier rubyid_adjust'><span class='object_link'><a href="#adjust-class_method" title="ContextFree::Color.adjust (method)">adjust</a></span></span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_alpha'>alpha</span><span class='comma'>,</span> <span class='id identifier rubyid_alpha'>alpha</span>
+    <span class='const'><span class='object_link'><a href="" title="ContextFree::Color (class)">Color</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="#initialize-instance_method" title="ContextFree::Color#initialize (method)">new</a></span></span><span class='lparen'>(</span><span class='label'>hue:</span> <span class='id identifier rubyid_hue'>hue</span><span class='comma'>,</span> <span class='label'>saturation:</span> <span class='id identifier rubyid_saturation'>saturation</span><span class='comma'>,</span> <span class='label'>brightness:</span> <span class='id identifier rubyid_brightness'>brightness</span><span class='comma'>,</span> <span class='label'>alpha:</span> <span class='id identifier rubyid_new_alpha'>new_alpha</span><span class='rparen'>)</span>
+  <span class='kw'>end</span>
+
+  <span class='comment'>##
+</span>  <span class='comment'># Converts the color to RGBA (with R, G, B, and A from 0 to 1)
+</span>  <span class='comment'>#
+</span>  <span class='comment'># @return [Array&lt;Float&gt;] the color in RGBA format
+</span>  <span class='kw'>def</span> <span class='id identifier rubyid_to_rgba'>to_rgba</span>
+    <span class='id identifier rubyid_chroma'>chroma</span> <span class='op'>=</span> <span class='id identifier rubyid_brightness'>brightness</span> <span class='op'>*</span> <span class='id identifier rubyid_saturation'>saturation</span>
+    <span class='id identifier rubyid_hue_prime'>hue_prime</span> <span class='op'>=</span> <span class='id identifier rubyid_hue'>hue</span> <span class='op'>/</span> <span class='float'>60.0</span>
+    <span class='id identifier rubyid_x'>x</span> <span class='op'>=</span> <span class='id identifier rubyid_chroma'>chroma</span> <span class='op'>*</span> <span class='lparen'>(</span><span class='float'>1.0</span> <span class='op'>-</span> <span class='lparen'>(</span><span class='id identifier rubyid_hue_prime'>hue_prime</span> <span class='op'>%</span> <span class='float'>2.0</span> <span class='op'>-</span> <span class='float'>1.0</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_abs'>abs</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_r1'>r1</span><span class='comma'>,</span> <span class='id identifier rubyid_g1'>g1</span><span class='comma'>,</span> <span class='id identifier rubyid_b1'>b1</span> <span class='op'>=</span>
+      <span class='kw'>if</span> <span class='int'>0</span> <span class='op'>&lt;=</span> <span class='id identifier rubyid_hue_prime'>hue_prime</span> <span class='op'>&amp;&amp;</span> <span class='id identifier rubyid_hue_prime'>hue_prime</span> <span class='op'>&lt;</span> <span class='int'>1</span>
+        <span class='lbracket'>[</span><span class='id identifier rubyid_chroma'>chroma</span><span class='comma'>,</span> <span class='id identifier rubyid_x'>x</span><span class='comma'>,</span> <span class='float'>0.0</span><span class='rbracket'>]</span>
+      <span class='kw'>elsif</span> <span class='int'>1</span> <span class='op'>&lt;=</span> <span class='id identifier rubyid_hue_prime'>hue_prime</span> <span class='op'>&amp;&amp;</span> <span class='id identifier rubyid_hue_prime'>hue_prime</span> <span class='op'>&lt;</span> <span class='int'>2</span>
+        <span class='lbracket'>[</span><span class='id identifier rubyid_x'>x</span><span class='comma'>,</span> <span class='id identifier rubyid_chroma'>chroma</span><span class='comma'>,</span> <span class='float'>0.0</span><span class='rbracket'>]</span>
+      <span class='kw'>elsif</span> <span class='int'>2</span> <span class='op'>&lt;=</span> <span class='id identifier rubyid_hue_prime'>hue_prime</span> <span class='op'>&amp;&amp;</span> <span class='id identifier rubyid_hue_prime'>hue_prime</span> <span class='op'>&lt;</span> <span class='int'>3</span>
+        <span class='lbracket'>[</span><span class='float'>0.0</span><span class='comma'>,</span> <span class='id identifier rubyid_chroma'>chroma</span><span class='comma'>,</span> <span class='id identifier rubyid_x'>x</span><span class='rbracket'>]</span>
+      <span class='kw'>elsif</span> <span class='int'>3</span> <span class='op'>&lt;=</span> <span class='id identifier rubyid_hue_prime'>hue_prime</span> <span class='op'>&amp;&amp;</span> <span class='id identifier rubyid_hue_prime'>hue_prime</span> <span class='op'>&lt;</span> <span class='int'>4</span>
+        <span class='lbracket'>[</span><span class='float'>0.0</span><span class='comma'>,</span> <span class='id identifier rubyid_x'>x</span><span class='comma'>,</span> <span class='id identifier rubyid_chroma'>chroma</span><span class='rbracket'>]</span>
+      <span class='kw'>elsif</span> <span class='int'>4</span> <span class='op'>&lt;=</span> <span class='id identifier rubyid_hue_prime'>hue_prime</span> <span class='op'>&amp;&amp;</span> <span class='id identifier rubyid_hue_prime'>hue_prime</span> <span class='op'>&lt;</span> <span class='int'>5</span>
+        <span class='lbracket'>[</span><span class='id identifier rubyid_x'>x</span><span class='comma'>,</span> <span class='float'>0.0</span><span class='comma'>,</span> <span class='id identifier rubyid_chroma'>chroma</span><span class='rbracket'>]</span>
+      <span class='kw'>else</span>
+        <span class='lbracket'>[</span><span class='id identifier rubyid_chroma'>chroma</span><span class='comma'>,</span> <span class='float'>0.0</span><span class='comma'>,</span> <span class='id identifier rubyid_x'>x</span><span class='rbracket'>]</span>
+      <span class='kw'>end</span>
+    <span class='id identifier rubyid_m'>m</span> <span class='op'>=</span> <span class='id identifier rubyid_brightness'>brightness</span> <span class='op'>-</span> <span class='id identifier rubyid_chroma'>chroma</span>
+    <span class='lbracket'>[</span><span class='id identifier rubyid_r1'>r1</span> <span class='op'>+</span> <span class='id identifier rubyid_m'>m</span><span class='comma'>,</span> <span class='id identifier rubyid_g1'>g1</span> <span class='op'>+</span> <span class='id identifier rubyid_m'>m</span><span class='comma'>,</span> <span class='id identifier rubyid_b1'>b1</span> <span class='op'>+</span> <span class='id identifier rubyid_m'>m</span><span class='comma'>,</span> <span class='ivar'>@alpha</span><span class='rbracket'>]</span>
+  <span class='kw'>end</span>
+
+  <span class='kw'>def</span> <span class='op'>==</span><span class='lparen'>(</span><span class='id identifier rubyid_other'>other</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_other'>other</span><span class='period'>.</span><span class='id identifier rubyid_is_a?'>is_a?</span><span class='lparen'>(</span><span class='const'><span class='object_link'><a href="" title="ContextFree::Color (class)">Color</a></span></span><span class='rparen'>)</span> <span class='op'>&amp;&amp;</span> <span class='ivar'>@hue</span> <span class='op'>==</span> <span class='id identifier rubyid_other'>other</span><span class='period'>.</span><span class='id identifier rubyid_hue'>hue</span> <span class='op'>&amp;&amp;</span> <span class='ivar'>@saturation</span> <span class='op'>==</span> <span class='id identifier rubyid_other'>other</span><span class='period'>.</span><span class='id identifier rubyid_saturation'>saturation</span> <span class='op'>&amp;&amp;</span> <span class='ivar'>@brightness</span> <span class='op'>==</span> <span class='id identifier rubyid_other'>other</span><span class='period'>.</span><span class='id identifier rubyid_brightness'>brightness</span> <span class='op'>&amp;&amp;</span> <span class='ivar'>@alpha</span> <span class='op'>==</span> <span class='id identifier rubyid_other'>other</span><span class='period'>.</span><span class='id identifier rubyid_alpha'>alpha</span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id=""></span>
+      <div class="method_details ">
+  <h3 class="signature " id="brightness-instance_method">
+  
+    #<strong>brightness</strong>  &#x21d2; <tt>Float</tt>  <span class="extras">(readonly)</span>
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    Returns the brightness value from 0 to 1 (this is the V in HSV, or the B in HSB).
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Float</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>the brightness value from 0 to 1 (this is the V in HSV, or the B in HSB)</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+180
+181
+182
+183
+184
+185
+186
+187
+188
+189
+190
+191
+192
+193
+194
+195
+196
+197
+198
+199
+200</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'src/color.rb', line 22</span>
+
+<span class='kw'>class</span> <span class='const'><span class='object_link'><a href="" title="ContextFree::Color (class)">Color</a></span></span>
+  <span class='kw'>class</span> <span class='op'>&lt;&lt;</span> <span class='kw'>self</span>
+    <span class='comment'># Returns black
+</span>    <span class='comment'># @return [Color]
+</span>    <span class='kw'>def</span> <span class='id identifier rubyid_black'>black</span>
+      <span class='const'><span class='object_link'><a href="" title="ContextFree::Color (class)">Color</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="#initialize-instance_method" title="ContextFree::Color#initialize (method)">new</a></span></span> <span class='label'>hue:</span> <span class='int'>0</span><span class='comma'>,</span> <span class='label'>saturation:</span> <span class='int'>0</span><span class='comma'>,</span> <span class='label'>brightness:</span> <span class='int'>0</span><span class='comma'>,</span> <span class='label'>alpha:</span> <span class='int'>1</span>
+    <span class='kw'>end</span>
+
+    <span class='comment'># Returns white
+</span>    <span class='comment'># @return [Color]
+</span>    <span class='kw'>def</span> <span class='id identifier rubyid_white'>white</span>
+      <span class='const'><span class='object_link'><a href="" title="ContextFree::Color (class)">Color</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="#initialize-instance_method" title="ContextFree::Color#initialize (method)">new</a></span></span> <span class='label'>hue:</span> <span class='int'>0</span><span class='comma'>,</span> <span class='label'>saturation:</span> <span class='int'>0</span><span class='comma'>,</span> <span class='label'>brightness:</span> <span class='int'>1</span><span class='comma'>,</span> <span class='label'>alpha:</span> <span class='int'>1</span>
+    <span class='kw'>end</span>
+
+    <span class='comment'># Returns red
+</span>    <span class='comment'># @return [Color]
+</span>    <span class='kw'>def</span> <span class='id identifier rubyid_red'>red</span>
+      <span class='const'><span class='object_link'><a href="" title="ContextFree::Color (class)">Color</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="#initialize-instance_method" title="ContextFree::Color#initialize (method)">new</a></span></span> <span class='label'>hue:</span> <span class='int'>0</span><span class='comma'>,</span> <span class='label'>saturation:</span> <span class='int'>1</span><span class='comma'>,</span> <span class='label'>brightness:</span> <span class='int'>1</span><span class='comma'>,</span> <span class='label'>alpha:</span> <span class='int'>1</span>
+    <span class='kw'>end</span>
+
+    <span class='comment'># Returns orange
+</span>    <span class='comment'># @return [Color]
+</span>    <span class='kw'>def</span> <span class='id identifier rubyid_orange'>orange</span>
+      <span class='const'><span class='object_link'><a href="" title="ContextFree::Color (class)">Color</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="#initialize-instance_method" title="ContextFree::Color#initialize (method)">new</a></span></span> <span class='label'>hue:</span> <span class='int'>30</span><span class='comma'>,</span> <span class='label'>saturation:</span> <span class='int'>1</span><span class='comma'>,</span> <span class='label'>brightness:</span> <span class='int'>1</span><span class='comma'>,</span> <span class='label'>alpha:</span> <span class='int'>1</span>
+    <span class='kw'>end</span>
+
+    <span class='comment'># Returns yellow
+</span>    <span class='comment'># @return [Color]
+</span>    <span class='kw'>def</span> <span class='id identifier rubyid_yellow'>yellow</span>
+      <span class='const'><span class='object_link'><a href="" title="ContextFree::Color (class)">Color</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="#initialize-instance_method" title="ContextFree::Color#initialize (method)">new</a></span></span> <span class='label'>hue:</span> <span class='int'>60</span><span class='comma'>,</span> <span class='label'>saturation:</span> <span class='int'>1</span><span class='comma'>,</span> <span class='label'>brightness:</span> <span class='int'>1</span><span class='comma'>,</span> <span class='label'>alpha:</span> <span class='int'>1</span>
+    <span class='kw'>end</span>
+
+    <span class='comment'># Returns green
+</span>    <span class='comment'># @return [Color]
+</span>    <span class='kw'>def</span> <span class='id identifier rubyid_green'>green</span>
+      <span class='const'><span class='object_link'><a href="" title="ContextFree::Color (class)">Color</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="#initialize-instance_method" title="ContextFree::Color#initialize (method)">new</a></span></span> <span class='label'>hue:</span> <span class='int'>120</span><span class='comma'>,</span> <span class='label'>saturation:</span> <span class='int'>1</span><span class='comma'>,</span> <span class='label'>brightness:</span> <span class='int'>1</span><span class='comma'>,</span> <span class='label'>alpha:</span> <span class='int'>1</span>
+    <span class='kw'>end</span>
+
+    <span class='comment'># Returns cyan
+</span>    <span class='comment'># @return [Color]
+</span>    <span class='kw'>def</span> <span class='id identifier rubyid_cyan'>cyan</span>
+      <span class='const'><span class='object_link'><a href="" title="ContextFree::Color (class)">Color</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="#initialize-instance_method" title="ContextFree::Color#initialize (method)">new</a></span></span> <span class='label'>hue:</span> <span class='int'>180</span><span class='comma'>,</span> <span class='label'>saturation:</span> <span class='int'>1</span><span class='comma'>,</span> <span class='label'>brightness:</span> <span class='int'>1</span><span class='comma'>,</span> <span class='label'>alpha:</span> <span class='int'>1</span>
+    <span class='kw'>end</span>
+
+    <span class='comment'># Returns blue
+</span>    <span class='comment'># @return [Color]
+</span>    <span class='kw'>def</span> <span class='id identifier rubyid_blue'>blue</span>
+      <span class='const'><span class='object_link'><a href="" title="ContextFree::Color (class)">Color</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="#initialize-instance_method" title="ContextFree::Color#initialize (method)">new</a></span></span> <span class='label'>hue:</span> <span class='int'>240</span><span class='comma'>,</span> <span class='label'>saturation:</span> <span class='int'>1</span><span class='comma'>,</span> <span class='label'>brightness:</span> <span class='int'>1</span><span class='comma'>,</span> <span class='label'>alpha:</span> <span class='int'>1</span>
+    <span class='kw'>end</span>
+
+    <span class='comment'># Returns magenta
+</span>    <span class='comment'># @return [Color]
+</span>    <span class='kw'>def</span> <span class='id identifier rubyid_magenta'>magenta</span>
+      <span class='const'><span class='object_link'><a href="" title="ContextFree::Color (class)">Color</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="#initialize-instance_method" title="ContextFree::Color#initialize (method)">new</a></span></span> <span class='label'>hue:</span> <span class='int'>300</span><span class='comma'>,</span> <span class='label'>saturation:</span> <span class='int'>1</span><span class='comma'>,</span> <span class='label'>brightness:</span> <span class='int'>1</span><span class='comma'>,</span> <span class='label'>alpha:</span> <span class='int'>1</span>
+    <span class='kw'>end</span>
+
+    <span class='comment'>##
+</span>    <span class='comment'># Applies the given adjustment (-1 to 1) to the given base value (0 to 1)
+</span>    <span class='comment'>#
+</span>    <span class='comment'># - an +adjustment+ of 0 returns +base+, unchanged
+</span>    <span class='comment'># - a negative adjustment moves the base value closer to 0,
+</span>    <span class='comment'>#   e.g. starting at 0.8 with an adjustment of -0.5 takes away 50% of 0.8,
+</span>    <span class='comment'>#   resulting in 0.4.
+</span>    <span class='comment'># - a positive adjustment moves the base value closer to 1,
+</span>    <span class='comment'>#   e.g. starting at 0.8 with an adjustment of 0.5 adds 50% of 0.2 (this is 1 - 0.8),
+</span>    <span class='comment'>#   resulting in 0.9
+</span>    <span class='comment'>#
+</span>    <span class='comment'># @param base [Float] the base value (0 to 1)
+</span>    <span class='comment'># @param adjustment [Float] the adjustment value (-1 to 1)
+</span>    <span class='comment'># @return [Float] the adjusted value
+</span>    <span class='kw'>def</span> <span class='id identifier rubyid_adjust'>adjust</span><span class='lparen'>(</span><span class='id identifier rubyid_base'>base</span><span class='comma'>,</span> <span class='id identifier rubyid_adjustment'>adjustment</span><span class='rparen'>)</span>
+      <span class='kw'>if</span> <span class='id identifier rubyid_adjustment'>adjustment</span><span class='period'>.</span><span class='id identifier rubyid_zero?'>zero?</span>
+        <span class='id identifier rubyid_base'>base</span>
+      <span class='kw'>elsif</span> <span class='id identifier rubyid_adjustment'>adjustment</span><span class='period'>.</span><span class='id identifier rubyid_negative?'>negative?</span>
+        <span class='id identifier rubyid_base'>base</span> <span class='op'>+</span> <span class='id identifier rubyid_base'>base</span> <span class='op'>*</span> <span class='id identifier rubyid_adjustment'>adjustment</span>
+      <span class='kw'>else</span>
+        <span class='id identifier rubyid_base'>base</span> <span class='op'>+</span> <span class='lparen'>(</span><span class='int'>1</span> <span class='op'>-</span> <span class='id identifier rubyid_base'>base</span><span class='rparen'>)</span> <span class='op'>*</span> <span class='id identifier rubyid_adjustment'>adjustment</span>
+      <span class='kw'>end</span>
+    <span class='kw'>end</span>
+  <span class='kw'>end</span>
+
+  <span class='id identifier rubyid_attr_reader'>attr_reader</span> <span class='symbol'>:hue</span><span class='comma'>,</span> <span class='symbol'>:saturation</span><span class='comma'>,</span> <span class='symbol'>:brightness</span><span class='comma'>,</span> <span class='symbol'>:alpha</span>
+
+  <span class='comment'>##
+</span>  <span class='comment'># Creates a new color with given hue, saturation, brightness and alpha
+</span>  <span class='comment'>#
+</span>  <span class='comment'># @param hue [Float, Integer] the hue in the range +[0, 360)+
+</span>  <span class='comment'># @param saturation [Float, Integer] the saturation from 0 to 1
+</span>  <span class='comment'># @param brightness [Float, Integer] the brightness from 0 to 1
+</span>  <span class='comment'># @param alpha [Float, Integer] the alpha value from 0 to 1
+</span>  <span class='kw'>def</span> <span class='id identifier rubyid_initialize'>initialize</span><span class='lparen'>(</span><span class='label'>hue:</span><span class='comma'>,</span> <span class='label'>saturation:</span><span class='comma'>,</span> <span class='label'>brightness:</span><span class='comma'>,</span> <span class='label'>alpha:</span> <span class='float'>1.0</span><span class='rparen'>)</span>
+    <span class='ivar'>@hue</span> <span class='op'>=</span> <span class='id identifier rubyid_hue'>hue</span> <span class='op'>%</span> <span class='float'>360.0</span>
+    <span class='ivar'>@saturation</span> <span class='op'>=</span> <span class='id identifier rubyid_saturation'>saturation</span><span class='period'>.</span><span class='id identifier rubyid_to_f'>to_f</span><span class='period'>.</span><span class='id identifier rubyid_clamp'>clamp</span><span class='lparen'>(</span><span class='float'>0.0</span><span class='comma'>,</span> <span class='float'>1.0</span><span class='rparen'>)</span>
+    <span class='ivar'>@brightness</span> <span class='op'>=</span> <span class='id identifier rubyid_brightness'>brightness</span><span class='period'>.</span><span class='id identifier rubyid_to_f'>to_f</span><span class='period'>.</span><span class='id identifier rubyid_clamp'>clamp</span><span class='lparen'>(</span><span class='float'>0.0</span><span class='comma'>,</span> <span class='float'>1.0</span><span class='rparen'>)</span>
+    <span class='ivar'>@alpha</span> <span class='op'>=</span> <span class='id identifier rubyid_alpha'>alpha</span><span class='period'>.</span><span class='id identifier rubyid_to_f'>to_f</span><span class='period'>.</span><span class='id identifier rubyid_clamp'>clamp</span><span class='lparen'>(</span><span class='float'>0.0</span><span class='comma'>,</span> <span class='float'>1.0</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_freeze'>freeze</span>
+  <span class='kw'>end</span>
+
+  <span class='comment'>##
+</span>  <span class='comment'># Add the given value to the hue, returning a new color.
+</span>  <span class='comment'>#
+</span>  <span class='comment'># The resulting hue is the current hue plus the given value mod 360.0.
+</span>  <span class='comment'>#
+</span>  <span class='comment'># @param h [Float, Integer] the value to add
+</span>  <span class='comment'># @return [Color]
+</span>  <span class='kw'>def</span> <span class='id identifier rubyid_add_hue'>add_hue</span><span class='lparen'>(</span><span class='id identifier rubyid_h'>h</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_new_hue'>new_hue</span> <span class='op'>=</span> <span class='lparen'>(</span><span class='ivar'>@hue</span> <span class='op'>+</span> <span class='id identifier rubyid_h'>h</span><span class='period'>.</span><span class='id identifier rubyid_to_f'>to_f</span><span class='rparen'>)</span> <span class='op'>%</span> <span class='float'>360.0</span>
+    <span class='const'><span class='object_link'><a href="" title="ContextFree::Color (class)">Color</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="#initialize-instance_method" title="ContextFree::Color#initialize (method)">new</a></span></span><span class='lparen'>(</span><span class='label'>hue:</span> <span class='id identifier rubyid_new_hue'>new_hue</span><span class='comma'>,</span> <span class='label'>saturation:</span> <span class='id identifier rubyid_saturation'>saturation</span><span class='comma'>,</span> <span class='label'>brightness:</span> <span class='id identifier rubyid_brightness'>brightness</span><span class='comma'>,</span> <span class='label'>alpha:</span> <span class='id identifier rubyid_alpha'>alpha</span><span class='rparen'>)</span>
+  <span class='kw'>end</span>
+
+  <span class='comment'>##
+</span>  <span class='comment'># Adjust the saturation value, returning a new color.
+</span>  <span class='comment'>#
+</span>  <span class='comment'># @see Color::adjust
+</span>  <span class='comment'>#
+</span>  <span class='comment'># @param sat [Float, Integer] the adjustment from -1 to 1 (negative moves it closer to 0, positive moves it closer to 1)
+</span>  <span class='comment'># @return [Color]
+</span>  <span class='kw'>def</span> <span class='id identifier rubyid_add_saturation'>add_saturation</span><span class='lparen'>(</span><span class='id identifier rubyid_sat'>sat</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_sat'>sat</span> <span class='op'>=</span> <span class='id identifier rubyid_sat'>sat</span><span class='period'>.</span><span class='id identifier rubyid_to_f'>to_f</span><span class='period'>.</span><span class='id identifier rubyid_clamp'>clamp</span><span class='lparen'>(</span><span class='op'>-</span><span class='float'>1.0</span><span class='comma'>,</span> <span class='float'>1.0</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_new_sat'>new_sat</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="" title="ContextFree::Color (class)">Color</a></span></span><span class='period'>.</span><span class='id identifier rubyid_adjust'><span class='object_link'><a href="#adjust-class_method" title="ContextFree::Color.adjust (method)">adjust</a></span></span> <span class='id identifier rubyid_saturation'>saturation</span><span class='comma'>,</span> <span class='id identifier rubyid_sat'>sat</span>
+    <span class='const'><span class='object_link'><a href="" title="ContextFree::Color (class)">Color</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="#initialize-instance_method" title="ContextFree::Color#initialize (method)">new</a></span></span><span class='lparen'>(</span><span class='label'>hue:</span> <span class='id identifier rubyid_hue'>hue</span><span class='comma'>,</span> <span class='label'>saturation:</span> <span class='id identifier rubyid_new_sat'>new_sat</span><span class='comma'>,</span> <span class='label'>brightness:</span> <span class='id identifier rubyid_brightness'>brightness</span><span class='comma'>,</span> <span class='label'>alpha:</span> <span class='id identifier rubyid_alpha'>alpha</span><span class='rparen'>)</span>
+  <span class='kw'>end</span>
+
+  <span class='comment'>##
+</span>  <span class='comment'># Adjust the brightness value, returning a new color.
+</span>  <span class='comment'>#
+</span>  <span class='comment'># @see Color::adjust
+</span>  <span class='comment'>#
+</span>  <span class='comment'># @param b [Float, Integer] the adjustment from -1 to 1 (negative moves it closer to 0, positive moves it closer to 1)
+</span>  <span class='comment'># @return [Color]
+</span>  <span class='kw'>def</span> <span class='id identifier rubyid_add_brightness'>add_brightness</span><span class='lparen'>(</span><span class='id identifier rubyid_b'>b</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_b'>b</span> <span class='op'>=</span> <span class='id identifier rubyid_b'>b</span><span class='period'>.</span><span class='id identifier rubyid_to_f'>to_f</span><span class='period'>.</span><span class='id identifier rubyid_clamp'>clamp</span><span class='lparen'>(</span><span class='op'>-</span><span class='float'>1.0</span><span class='comma'>,</span> <span class='float'>1.0</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_new_b'>new_b</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="" title="ContextFree::Color (class)">Color</a></span></span><span class='period'>.</span><span class='id identifier rubyid_adjust'><span class='object_link'><a href="#adjust-class_method" title="ContextFree::Color.adjust (method)">adjust</a></span></span> <span class='id identifier rubyid_brightness'>brightness</span><span class='comma'>,</span> <span class='id identifier rubyid_b'>b</span>
+    <span class='const'><span class='object_link'><a href="" title="ContextFree::Color (class)">Color</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="#initialize-instance_method" title="ContextFree::Color#initialize (method)">new</a></span></span><span class='lparen'>(</span><span class='label'>hue:</span> <span class='id identifier rubyid_hue'>hue</span><span class='comma'>,</span> <span class='label'>saturation:</span> <span class='id identifier rubyid_saturation'>saturation</span><span class='comma'>,</span> <span class='label'>brightness:</span> <span class='id identifier rubyid_new_b'>new_b</span><span class='comma'>,</span> <span class='label'>alpha:</span> <span class='id identifier rubyid_alpha'>alpha</span><span class='rparen'>)</span>
+  <span class='kw'>end</span>
+
+  <span class='comment'>##
+</span>  <span class='comment'># Adjust the alpha value, returning a new color.
+</span>  <span class='comment'>#
+</span>  <span class='comment'># @see Color::adjust
+</span>  <span class='comment'>#
+</span>  <span class='comment'># @param alpha [Float, Integer] the adjustment from -1 to 1 (negative moves it closer to 0, positive moves it closer to 1)
+</span>  <span class='comment'># @return [Color]
+</span>  <span class='kw'>def</span> <span class='id identifier rubyid_add_alpha'>add_alpha</span><span class='lparen'>(</span><span class='id identifier rubyid_alpha'>alpha</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_alpha'>alpha</span> <span class='op'>=</span> <span class='id identifier rubyid_alpha'>alpha</span><span class='period'>.</span><span class='id identifier rubyid_to_f'>to_f</span><span class='period'>.</span><span class='id identifier rubyid_clamp'>clamp</span><span class='lparen'>(</span><span class='op'>-</span><span class='float'>1.0</span><span class='comma'>,</span> <span class='float'>1.0</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_new_alpha'>new_alpha</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="" title="ContextFree::Color (class)">Color</a></span></span><span class='period'>.</span><span class='id identifier rubyid_adjust'><span class='object_link'><a href="#adjust-class_method" title="ContextFree::Color.adjust (method)">adjust</a></span></span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_alpha'>alpha</span><span class='comma'>,</span> <span class='id identifier rubyid_alpha'>alpha</span>
+    <span class='const'><span class='object_link'><a href="" title="ContextFree::Color (class)">Color</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="#initialize-instance_method" title="ContextFree::Color#initialize (method)">new</a></span></span><span class='lparen'>(</span><span class='label'>hue:</span> <span class='id identifier rubyid_hue'>hue</span><span class='comma'>,</span> <span class='label'>saturation:</span> <span class='id identifier rubyid_saturation'>saturation</span><span class='comma'>,</span> <span class='label'>brightness:</span> <span class='id identifier rubyid_brightness'>brightness</span><span class='comma'>,</span> <span class='label'>alpha:</span> <span class='id identifier rubyid_new_alpha'>new_alpha</span><span class='rparen'>)</span>
+  <span class='kw'>end</span>
+
+  <span class='comment'>##
+</span>  <span class='comment'># Converts the color to RGBA (with R, G, B, and A from 0 to 1)
+</span>  <span class='comment'>#
+</span>  <span class='comment'># @return [Array&lt;Float&gt;] the color in RGBA format
+</span>  <span class='kw'>def</span> <span class='id identifier rubyid_to_rgba'>to_rgba</span>
+    <span class='id identifier rubyid_chroma'>chroma</span> <span class='op'>=</span> <span class='id identifier rubyid_brightness'>brightness</span> <span class='op'>*</span> <span class='id identifier rubyid_saturation'>saturation</span>
+    <span class='id identifier rubyid_hue_prime'>hue_prime</span> <span class='op'>=</span> <span class='id identifier rubyid_hue'>hue</span> <span class='op'>/</span> <span class='float'>60.0</span>
+    <span class='id identifier rubyid_x'>x</span> <span class='op'>=</span> <span class='id identifier rubyid_chroma'>chroma</span> <span class='op'>*</span> <span class='lparen'>(</span><span class='float'>1.0</span> <span class='op'>-</span> <span class='lparen'>(</span><span class='id identifier rubyid_hue_prime'>hue_prime</span> <span class='op'>%</span> <span class='float'>2.0</span> <span class='op'>-</span> <span class='float'>1.0</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_abs'>abs</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_r1'>r1</span><span class='comma'>,</span> <span class='id identifier rubyid_g1'>g1</span><span class='comma'>,</span> <span class='id identifier rubyid_b1'>b1</span> <span class='op'>=</span>
+      <span class='kw'>if</span> <span class='int'>0</span> <span class='op'>&lt;=</span> <span class='id identifier rubyid_hue_prime'>hue_prime</span> <span class='op'>&amp;&amp;</span> <span class='id identifier rubyid_hue_prime'>hue_prime</span> <span class='op'>&lt;</span> <span class='int'>1</span>
+        <span class='lbracket'>[</span><span class='id identifier rubyid_chroma'>chroma</span><span class='comma'>,</span> <span class='id identifier rubyid_x'>x</span><span class='comma'>,</span> <span class='float'>0.0</span><span class='rbracket'>]</span>
+      <span class='kw'>elsif</span> <span class='int'>1</span> <span class='op'>&lt;=</span> <span class='id identifier rubyid_hue_prime'>hue_prime</span> <span class='op'>&amp;&amp;</span> <span class='id identifier rubyid_hue_prime'>hue_prime</span> <span class='op'>&lt;</span> <span class='int'>2</span>
+        <span class='lbracket'>[</span><span class='id identifier rubyid_x'>x</span><span class='comma'>,</span> <span class='id identifier rubyid_chroma'>chroma</span><span class='comma'>,</span> <span class='float'>0.0</span><span class='rbracket'>]</span>
+      <span class='kw'>elsif</span> <span class='int'>2</span> <span class='op'>&lt;=</span> <span class='id identifier rubyid_hue_prime'>hue_prime</span> <span class='op'>&amp;&amp;</span> <span class='id identifier rubyid_hue_prime'>hue_prime</span> <span class='op'>&lt;</span> <span class='int'>3</span>
+        <span class='lbracket'>[</span><span class='float'>0.0</span><span class='comma'>,</span> <span class='id identifier rubyid_chroma'>chroma</span><span class='comma'>,</span> <span class='id identifier rubyid_x'>x</span><span class='rbracket'>]</span>
+      <span class='kw'>elsif</span> <span class='int'>3</span> <span class='op'>&lt;=</span> <span class='id identifier rubyid_hue_prime'>hue_prime</span> <span class='op'>&amp;&amp;</span> <span class='id identifier rubyid_hue_prime'>hue_prime</span> <span class='op'>&lt;</span> <span class='int'>4</span>
+        <span class='lbracket'>[</span><span class='float'>0.0</span><span class='comma'>,</span> <span class='id identifier rubyid_x'>x</span><span class='comma'>,</span> <span class='id identifier rubyid_chroma'>chroma</span><span class='rbracket'>]</span>
+      <span class='kw'>elsif</span> <span class='int'>4</span> <span class='op'>&lt;=</span> <span class='id identifier rubyid_hue_prime'>hue_prime</span> <span class='op'>&amp;&amp;</span> <span class='id identifier rubyid_hue_prime'>hue_prime</span> <span class='op'>&lt;</span> <span class='int'>5</span>
+        <span class='lbracket'>[</span><span class='id identifier rubyid_x'>x</span><span class='comma'>,</span> <span class='float'>0.0</span><span class='comma'>,</span> <span class='id identifier rubyid_chroma'>chroma</span><span class='rbracket'>]</span>
+      <span class='kw'>else</span>
+        <span class='lbracket'>[</span><span class='id identifier rubyid_chroma'>chroma</span><span class='comma'>,</span> <span class='float'>0.0</span><span class='comma'>,</span> <span class='id identifier rubyid_x'>x</span><span class='rbracket'>]</span>
+      <span class='kw'>end</span>
+    <span class='id identifier rubyid_m'>m</span> <span class='op'>=</span> <span class='id identifier rubyid_brightness'>brightness</span> <span class='op'>-</span> <span class='id identifier rubyid_chroma'>chroma</span>
+    <span class='lbracket'>[</span><span class='id identifier rubyid_r1'>r1</span> <span class='op'>+</span> <span class='id identifier rubyid_m'>m</span><span class='comma'>,</span> <span class='id identifier rubyid_g1'>g1</span> <span class='op'>+</span> <span class='id identifier rubyid_m'>m</span><span class='comma'>,</span> <span class='id identifier rubyid_b1'>b1</span> <span class='op'>+</span> <span class='id identifier rubyid_m'>m</span><span class='comma'>,</span> <span class='ivar'>@alpha</span><span class='rbracket'>]</span>
+  <span class='kw'>end</span>
+
+  <span class='kw'>def</span> <span class='op'>==</span><span class='lparen'>(</span><span class='id identifier rubyid_other'>other</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_other'>other</span><span class='period'>.</span><span class='id identifier rubyid_is_a?'>is_a?</span><span class='lparen'>(</span><span class='const'><span class='object_link'><a href="" title="ContextFree::Color (class)">Color</a></span></span><span class='rparen'>)</span> <span class='op'>&amp;&amp;</span> <span class='ivar'>@hue</span> <span class='op'>==</span> <span class='id identifier rubyid_other'>other</span><span class='period'>.</span><span class='id identifier rubyid_hue'>hue</span> <span class='op'>&amp;&amp;</span> <span class='ivar'>@saturation</span> <span class='op'>==</span> <span class='id identifier rubyid_other'>other</span><span class='period'>.</span><span class='id identifier rubyid_saturation'>saturation</span> <span class='op'>&amp;&amp;</span> <span class='ivar'>@brightness</span> <span class='op'>==</span> <span class='id identifier rubyid_other'>other</span><span class='period'>.</span><span class='id identifier rubyid_brightness'>brightness</span> <span class='op'>&amp;&amp;</span> <span class='ivar'>@alpha</span> <span class='op'>==</span> <span class='id identifier rubyid_other'>other</span><span class='period'>.</span><span class='id identifier rubyid_alpha'>alpha</span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id=""></span>
+      <div class="method_details ">
+  <h3 class="signature " id="hue-instance_method">
+  
+    #<strong>hue</strong>  &#x21d2; <tt>Float</tt>  <span class="extras">(readonly)</span>
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    Returns the hue in &quot;degrees&quot; in the range +[0, 360)+.
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Float</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>the hue in &quot;degrees&quot; in the range +[0, 360)+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+180
+181
+182
+183
+184
+185
+186
+187
+188
+189
+190
+191
+192
+193
+194
+195
+196
+197
+198
+199
+200</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'src/color.rb', line 22</span>
+
+<span class='kw'>class</span> <span class='const'><span class='object_link'><a href="" title="ContextFree::Color (class)">Color</a></span></span>
+  <span class='kw'>class</span> <span class='op'>&lt;&lt;</span> <span class='kw'>self</span>
+    <span class='comment'># Returns black
+</span>    <span class='comment'># @return [Color]
+</span>    <span class='kw'>def</span> <span class='id identifier rubyid_black'>black</span>
+      <span class='const'><span class='object_link'><a href="" title="ContextFree::Color (class)">Color</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="#initialize-instance_method" title="ContextFree::Color#initialize (method)">new</a></span></span> <span class='label'>hue:</span> <span class='int'>0</span><span class='comma'>,</span> <span class='label'>saturation:</span> <span class='int'>0</span><span class='comma'>,</span> <span class='label'>brightness:</span> <span class='int'>0</span><span class='comma'>,</span> <span class='label'>alpha:</span> <span class='int'>1</span>
+    <span class='kw'>end</span>
+
+    <span class='comment'># Returns white
+</span>    <span class='comment'># @return [Color]
+</span>    <span class='kw'>def</span> <span class='id identifier rubyid_white'>white</span>
+      <span class='const'><span class='object_link'><a href="" title="ContextFree::Color (class)">Color</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="#initialize-instance_method" title="ContextFree::Color#initialize (method)">new</a></span></span> <span class='label'>hue:</span> <span class='int'>0</span><span class='comma'>,</span> <span class='label'>saturation:</span> <span class='int'>0</span><span class='comma'>,</span> <span class='label'>brightness:</span> <span class='int'>1</span><span class='comma'>,</span> <span class='label'>alpha:</span> <span class='int'>1</span>
+    <span class='kw'>end</span>
+
+    <span class='comment'># Returns red
+</span>    <span class='comment'># @return [Color]
+</span>    <span class='kw'>def</span> <span class='id identifier rubyid_red'>red</span>
+      <span class='const'><span class='object_link'><a href="" title="ContextFree::Color (class)">Color</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="#initialize-instance_method" title="ContextFree::Color#initialize (method)">new</a></span></span> <span class='label'>hue:</span> <span class='int'>0</span><span class='comma'>,</span> <span class='label'>saturation:</span> <span class='int'>1</span><span class='comma'>,</span> <span class='label'>brightness:</span> <span class='int'>1</span><span class='comma'>,</span> <span class='label'>alpha:</span> <span class='int'>1</span>
+    <span class='kw'>end</span>
+
+    <span class='comment'># Returns orange
+</span>    <span class='comment'># @return [Color]
+</span>    <span class='kw'>def</span> <span class='id identifier rubyid_orange'>orange</span>
+      <span class='const'><span class='object_link'><a href="" title="ContextFree::Color (class)">Color</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="#initialize-instance_method" title="ContextFree::Color#initialize (method)">new</a></span></span> <span class='label'>hue:</span> <span class='int'>30</span><span class='comma'>,</span> <span class='label'>saturation:</span> <span class='int'>1</span><span class='comma'>,</span> <span class='label'>brightness:</span> <span class='int'>1</span><span class='comma'>,</span> <span class='label'>alpha:</span> <span class='int'>1</span>
+    <span class='kw'>end</span>
+
+    <span class='comment'># Returns yellow
+</span>    <span class='comment'># @return [Color]
+</span>    <span class='kw'>def</span> <span class='id identifier rubyid_yellow'>yellow</span>
+      <span class='const'><span class='object_link'><a href="" title="ContextFree::Color (class)">Color</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="#initialize-instance_method" title="ContextFree::Color#initialize (method)">new</a></span></span> <span class='label'>hue:</span> <span class='int'>60</span><span class='comma'>,</span> <span class='label'>saturation:</span> <span class='int'>1</span><span class='comma'>,</span> <span class='label'>brightness:</span> <span class='int'>1</span><span class='comma'>,</span> <span class='label'>alpha:</span> <span class='int'>1</span>
+    <span class='kw'>end</span>
+
+    <span class='comment'># Returns green
+</span>    <span class='comment'># @return [Color]
+</span>    <span class='kw'>def</span> <span class='id identifier rubyid_green'>green</span>
+      <span class='const'><span class='object_link'><a href="" title="ContextFree::Color (class)">Color</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="#initialize-instance_method" title="ContextFree::Color#initialize (method)">new</a></span></span> <span class='label'>hue:</span> <span class='int'>120</span><span class='comma'>,</span> <span class='label'>saturation:</span> <span class='int'>1</span><span class='comma'>,</span> <span class='label'>brightness:</span> <span class='int'>1</span><span class='comma'>,</span> <span class='label'>alpha:</span> <span class='int'>1</span>
+    <span class='kw'>end</span>
+
+    <span class='comment'># Returns cyan
+</span>    <span class='comment'># @return [Color]
+</span>    <span class='kw'>def</span> <span class='id identifier rubyid_cyan'>cyan</span>
+      <span class='const'><span class='object_link'><a href="" title="ContextFree::Color (class)">Color</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="#initialize-instance_method" title="ContextFree::Color#initialize (method)">new</a></span></span> <span class='label'>hue:</span> <span class='int'>180</span><span class='comma'>,</span> <span class='label'>saturation:</span> <span class='int'>1</span><span class='comma'>,</span> <span class='label'>brightness:</span> <span class='int'>1</span><span class='comma'>,</span> <span class='label'>alpha:</span> <span class='int'>1</span>
+    <span class='kw'>end</span>
+
+    <span class='comment'># Returns blue
+</span>    <span class='comment'># @return [Color]
+</span>    <span class='kw'>def</span> <span class='id identifier rubyid_blue'>blue</span>
+      <span class='const'><span class='object_link'><a href="" title="ContextFree::Color (class)">Color</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="#initialize-instance_method" title="ContextFree::Color#initialize (method)">new</a></span></span> <span class='label'>hue:</span> <span class='int'>240</span><span class='comma'>,</span> <span class='label'>saturation:</span> <span class='int'>1</span><span class='comma'>,</span> <span class='label'>brightness:</span> <span class='int'>1</span><span class='comma'>,</span> <span class='label'>alpha:</span> <span class='int'>1</span>
+    <span class='kw'>end</span>
+
+    <span class='comment'># Returns magenta
+</span>    <span class='comment'># @return [Color]
+</span>    <span class='kw'>def</span> <span class='id identifier rubyid_magenta'>magenta</span>
+      <span class='const'><span class='object_link'><a href="" title="ContextFree::Color (class)">Color</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="#initialize-instance_method" title="ContextFree::Color#initialize (method)">new</a></span></span> <span class='label'>hue:</span> <span class='int'>300</span><span class='comma'>,</span> <span class='label'>saturation:</span> <span class='int'>1</span><span class='comma'>,</span> <span class='label'>brightness:</span> <span class='int'>1</span><span class='comma'>,</span> <span class='label'>alpha:</span> <span class='int'>1</span>
+    <span class='kw'>end</span>
+
+    <span class='comment'>##
+</span>    <span class='comment'># Applies the given adjustment (-1 to 1) to the given base value (0 to 1)
+</span>    <span class='comment'>#
+</span>    <span class='comment'># - an +adjustment+ of 0 returns +base+, unchanged
+</span>    <span class='comment'># - a negative adjustment moves the base value closer to 0,
+</span>    <span class='comment'>#   e.g. starting at 0.8 with an adjustment of -0.5 takes away 50% of 0.8,
+</span>    <span class='comment'>#   resulting in 0.4.
+</span>    <span class='comment'># - a positive adjustment moves the base value closer to 1,
+</span>    <span class='comment'>#   e.g. starting at 0.8 with an adjustment of 0.5 adds 50% of 0.2 (this is 1 - 0.8),
+</span>    <span class='comment'>#   resulting in 0.9
+</span>    <span class='comment'>#
+</span>    <span class='comment'># @param base [Float] the base value (0 to 1)
+</span>    <span class='comment'># @param adjustment [Float] the adjustment value (-1 to 1)
+</span>    <span class='comment'># @return [Float] the adjusted value
+</span>    <span class='kw'>def</span> <span class='id identifier rubyid_adjust'>adjust</span><span class='lparen'>(</span><span class='id identifier rubyid_base'>base</span><span class='comma'>,</span> <span class='id identifier rubyid_adjustment'>adjustment</span><span class='rparen'>)</span>
+      <span class='kw'>if</span> <span class='id identifier rubyid_adjustment'>adjustment</span><span class='period'>.</span><span class='id identifier rubyid_zero?'>zero?</span>
+        <span class='id identifier rubyid_base'>base</span>
+      <span class='kw'>elsif</span> <span class='id identifier rubyid_adjustment'>adjustment</span><span class='period'>.</span><span class='id identifier rubyid_negative?'>negative?</span>
+        <span class='id identifier rubyid_base'>base</span> <span class='op'>+</span> <span class='id identifier rubyid_base'>base</span> <span class='op'>*</span> <span class='id identifier rubyid_adjustment'>adjustment</span>
+      <span class='kw'>else</span>
+        <span class='id identifier rubyid_base'>base</span> <span class='op'>+</span> <span class='lparen'>(</span><span class='int'>1</span> <span class='op'>-</span> <span class='id identifier rubyid_base'>base</span><span class='rparen'>)</span> <span class='op'>*</span> <span class='id identifier rubyid_adjustment'>adjustment</span>
+      <span class='kw'>end</span>
+    <span class='kw'>end</span>
+  <span class='kw'>end</span>
+
+  <span class='id identifier rubyid_attr_reader'>attr_reader</span> <span class='symbol'>:hue</span><span class='comma'>,</span> <span class='symbol'>:saturation</span><span class='comma'>,</span> <span class='symbol'>:brightness</span><span class='comma'>,</span> <span class='symbol'>:alpha</span>
+
+  <span class='comment'>##
+</span>  <span class='comment'># Creates a new color with given hue, saturation, brightness and alpha
+</span>  <span class='comment'>#
+</span>  <span class='comment'># @param hue [Float, Integer] the hue in the range +[0, 360)+
+</span>  <span class='comment'># @param saturation [Float, Integer] the saturation from 0 to 1
+</span>  <span class='comment'># @param brightness [Float, Integer] the brightness from 0 to 1
+</span>  <span class='comment'># @param alpha [Float, Integer] the alpha value from 0 to 1
+</span>  <span class='kw'>def</span> <span class='id identifier rubyid_initialize'>initialize</span><span class='lparen'>(</span><span class='label'>hue:</span><span class='comma'>,</span> <span class='label'>saturation:</span><span class='comma'>,</span> <span class='label'>brightness:</span><span class='comma'>,</span> <span class='label'>alpha:</span> <span class='float'>1.0</span><span class='rparen'>)</span>
+    <span class='ivar'>@hue</span> <span class='op'>=</span> <span class='id identifier rubyid_hue'>hue</span> <span class='op'>%</span> <span class='float'>360.0</span>
+    <span class='ivar'>@saturation</span> <span class='op'>=</span> <span class='id identifier rubyid_saturation'>saturation</span><span class='period'>.</span><span class='id identifier rubyid_to_f'>to_f</span><span class='period'>.</span><span class='id identifier rubyid_clamp'>clamp</span><span class='lparen'>(</span><span class='float'>0.0</span><span class='comma'>,</span> <span class='float'>1.0</span><span class='rparen'>)</span>
+    <span class='ivar'>@brightness</span> <span class='op'>=</span> <span class='id identifier rubyid_brightness'>brightness</span><span class='period'>.</span><span class='id identifier rubyid_to_f'>to_f</span><span class='period'>.</span><span class='id identifier rubyid_clamp'>clamp</span><span class='lparen'>(</span><span class='float'>0.0</span><span class='comma'>,</span> <span class='float'>1.0</span><span class='rparen'>)</span>
+    <span class='ivar'>@alpha</span> <span class='op'>=</span> <span class='id identifier rubyid_alpha'>alpha</span><span class='period'>.</span><span class='id identifier rubyid_to_f'>to_f</span><span class='period'>.</span><span class='id identifier rubyid_clamp'>clamp</span><span class='lparen'>(</span><span class='float'>0.0</span><span class='comma'>,</span> <span class='float'>1.0</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_freeze'>freeze</span>
+  <span class='kw'>end</span>
+
+  <span class='comment'>##
+</span>  <span class='comment'># Add the given value to the hue, returning a new color.
+</span>  <span class='comment'>#
+</span>  <span class='comment'># The resulting hue is the current hue plus the given value mod 360.0.
+</span>  <span class='comment'>#
+</span>  <span class='comment'># @param h [Float, Integer] the value to add
+</span>  <span class='comment'># @return [Color]
+</span>  <span class='kw'>def</span> <span class='id identifier rubyid_add_hue'>add_hue</span><span class='lparen'>(</span><span class='id identifier rubyid_h'>h</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_new_hue'>new_hue</span> <span class='op'>=</span> <span class='lparen'>(</span><span class='ivar'>@hue</span> <span class='op'>+</span> <span class='id identifier rubyid_h'>h</span><span class='period'>.</span><span class='id identifier rubyid_to_f'>to_f</span><span class='rparen'>)</span> <span class='op'>%</span> <span class='float'>360.0</span>
+    <span class='const'><span class='object_link'><a href="" title="ContextFree::Color (class)">Color</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="#initialize-instance_method" title="ContextFree::Color#initialize (method)">new</a></span></span><span class='lparen'>(</span><span class='label'>hue:</span> <span class='id identifier rubyid_new_hue'>new_hue</span><span class='comma'>,</span> <span class='label'>saturation:</span> <span class='id identifier rubyid_saturation'>saturation</span><span class='comma'>,</span> <span class='label'>brightness:</span> <span class='id identifier rubyid_brightness'>brightness</span><span class='comma'>,</span> <span class='label'>alpha:</span> <span class='id identifier rubyid_alpha'>alpha</span><span class='rparen'>)</span>
+  <span class='kw'>end</span>
+
+  <span class='comment'>##
+</span>  <span class='comment'># Adjust the saturation value, returning a new color.
+</span>  <span class='comment'>#
+</span>  <span class='comment'># @see Color::adjust
+</span>  <span class='comment'>#
+</span>  <span class='comment'># @param sat [Float, Integer] the adjustment from -1 to 1 (negative moves it closer to 0, positive moves it closer to 1)
+</span>  <span class='comment'># @return [Color]
+</span>  <span class='kw'>def</span> <span class='id identifier rubyid_add_saturation'>add_saturation</span><span class='lparen'>(</span><span class='id identifier rubyid_sat'>sat</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_sat'>sat</span> <span class='op'>=</span> <span class='id identifier rubyid_sat'>sat</span><span class='period'>.</span><span class='id identifier rubyid_to_f'>to_f</span><span class='period'>.</span><span class='id identifier rubyid_clamp'>clamp</span><span class='lparen'>(</span><span class='op'>-</span><span class='float'>1.0</span><span class='comma'>,</span> <span class='float'>1.0</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_new_sat'>new_sat</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="" title="ContextFree::Color (class)">Color</a></span></span><span class='period'>.</span><span class='id identifier rubyid_adjust'><span class='object_link'><a href="#adjust-class_method" title="ContextFree::Color.adjust (method)">adjust</a></span></span> <span class='id identifier rubyid_saturation'>saturation</span><span class='comma'>,</span> <span class='id identifier rubyid_sat'>sat</span>
+    <span class='const'><span class='object_link'><a href="" title="ContextFree::Color (class)">Color</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="#initialize-instance_method" title="ContextFree::Color#initialize (method)">new</a></span></span><span class='lparen'>(</span><span class='label'>hue:</span> <span class='id identifier rubyid_hue'>hue</span><span class='comma'>,</span> <span class='label'>saturation:</span> <span class='id identifier rubyid_new_sat'>new_sat</span><span class='comma'>,</span> <span class='label'>brightness:</span> <span class='id identifier rubyid_brightness'>brightness</span><span class='comma'>,</span> <span class='label'>alpha:</span> <span class='id identifier rubyid_alpha'>alpha</span><span class='rparen'>)</span>
+  <span class='kw'>end</span>
+
+  <span class='comment'>##
+</span>  <span class='comment'># Adjust the brightness value, returning a new color.
+</span>  <span class='comment'>#
+</span>  <span class='comment'># @see Color::adjust
+</span>  <span class='comment'>#
+</span>  <span class='comment'># @param b [Float, Integer] the adjustment from -1 to 1 (negative moves it closer to 0, positive moves it closer to 1)
+</span>  <span class='comment'># @return [Color]
+</span>  <span class='kw'>def</span> <span class='id identifier rubyid_add_brightness'>add_brightness</span><span class='lparen'>(</span><span class='id identifier rubyid_b'>b</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_b'>b</span> <span class='op'>=</span> <span class='id identifier rubyid_b'>b</span><span class='period'>.</span><span class='id identifier rubyid_to_f'>to_f</span><span class='period'>.</span><span class='id identifier rubyid_clamp'>clamp</span><span class='lparen'>(</span><span class='op'>-</span><span class='float'>1.0</span><span class='comma'>,</span> <span class='float'>1.0</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_new_b'>new_b</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="" title="ContextFree::Color (class)">Color</a></span></span><span class='period'>.</span><span class='id identifier rubyid_adjust'><span class='object_link'><a href="#adjust-class_method" title="ContextFree::Color.adjust (method)">adjust</a></span></span> <span class='id identifier rubyid_brightness'>brightness</span><span class='comma'>,</span> <span class='id identifier rubyid_b'>b</span>
+    <span class='const'><span class='object_link'><a href="" title="ContextFree::Color (class)">Color</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="#initialize-instance_method" title="ContextFree::Color#initialize (method)">new</a></span></span><span class='lparen'>(</span><span class='label'>hue:</span> <span class='id identifier rubyid_hue'>hue</span><span class='comma'>,</span> <span class='label'>saturation:</span> <span class='id identifier rubyid_saturation'>saturation</span><span class='comma'>,</span> <span class='label'>brightness:</span> <span class='id identifier rubyid_new_b'>new_b</span><span class='comma'>,</span> <span class='label'>alpha:</span> <span class='id identifier rubyid_alpha'>alpha</span><span class='rparen'>)</span>
+  <span class='kw'>end</span>
+
+  <span class='comment'>##
+</span>  <span class='comment'># Adjust the alpha value, returning a new color.
+</span>  <span class='comment'>#
+</span>  <span class='comment'># @see Color::adjust
+</span>  <span class='comment'>#
+</span>  <span class='comment'># @param alpha [Float, Integer] the adjustment from -1 to 1 (negative moves it closer to 0, positive moves it closer to 1)
+</span>  <span class='comment'># @return [Color]
+</span>  <span class='kw'>def</span> <span class='id identifier rubyid_add_alpha'>add_alpha</span><span class='lparen'>(</span><span class='id identifier rubyid_alpha'>alpha</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_alpha'>alpha</span> <span class='op'>=</span> <span class='id identifier rubyid_alpha'>alpha</span><span class='period'>.</span><span class='id identifier rubyid_to_f'>to_f</span><span class='period'>.</span><span class='id identifier rubyid_clamp'>clamp</span><span class='lparen'>(</span><span class='op'>-</span><span class='float'>1.0</span><span class='comma'>,</span> <span class='float'>1.0</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_new_alpha'>new_alpha</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="" title="ContextFree::Color (class)">Color</a></span></span><span class='period'>.</span><span class='id identifier rubyid_adjust'><span class='object_link'><a href="#adjust-class_method" title="ContextFree::Color.adjust (method)">adjust</a></span></span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_alpha'>alpha</span><span class='comma'>,</span> <span class='id identifier rubyid_alpha'>alpha</span>
+    <span class='const'><span class='object_link'><a href="" title="ContextFree::Color (class)">Color</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="#initialize-instance_method" title="ContextFree::Color#initialize (method)">new</a></span></span><span class='lparen'>(</span><span class='label'>hue:</span> <span class='id identifier rubyid_hue'>hue</span><span class='comma'>,</span> <span class='label'>saturation:</span> <span class='id identifier rubyid_saturation'>saturation</span><span class='comma'>,</span> <span class='label'>brightness:</span> <span class='id identifier rubyid_brightness'>brightness</span><span class='comma'>,</span> <span class='label'>alpha:</span> <span class='id identifier rubyid_new_alpha'>new_alpha</span><span class='rparen'>)</span>
+  <span class='kw'>end</span>
+
+  <span class='comment'>##
+</span>  <span class='comment'># Converts the color to RGBA (with R, G, B, and A from 0 to 1)
+</span>  <span class='comment'>#
+</span>  <span class='comment'># @return [Array&lt;Float&gt;] the color in RGBA format
+</span>  <span class='kw'>def</span> <span class='id identifier rubyid_to_rgba'>to_rgba</span>
+    <span class='id identifier rubyid_chroma'>chroma</span> <span class='op'>=</span> <span class='id identifier rubyid_brightness'>brightness</span> <span class='op'>*</span> <span class='id identifier rubyid_saturation'>saturation</span>
+    <span class='id identifier rubyid_hue_prime'>hue_prime</span> <span class='op'>=</span> <span class='id identifier rubyid_hue'>hue</span> <span class='op'>/</span> <span class='float'>60.0</span>
+    <span class='id identifier rubyid_x'>x</span> <span class='op'>=</span> <span class='id identifier rubyid_chroma'>chroma</span> <span class='op'>*</span> <span class='lparen'>(</span><span class='float'>1.0</span> <span class='op'>-</span> <span class='lparen'>(</span><span class='id identifier rubyid_hue_prime'>hue_prime</span> <span class='op'>%</span> <span class='float'>2.0</span> <span class='op'>-</span> <span class='float'>1.0</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_abs'>abs</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_r1'>r1</span><span class='comma'>,</span> <span class='id identifier rubyid_g1'>g1</span><span class='comma'>,</span> <span class='id identifier rubyid_b1'>b1</span> <span class='op'>=</span>
+      <span class='kw'>if</span> <span class='int'>0</span> <span class='op'>&lt;=</span> <span class='id identifier rubyid_hue_prime'>hue_prime</span> <span class='op'>&amp;&amp;</span> <span class='id identifier rubyid_hue_prime'>hue_prime</span> <span class='op'>&lt;</span> <span class='int'>1</span>
+        <span class='lbracket'>[</span><span class='id identifier rubyid_chroma'>chroma</span><span class='comma'>,</span> <span class='id identifier rubyid_x'>x</span><span class='comma'>,</span> <span class='float'>0.0</span><span class='rbracket'>]</span>
+      <span class='kw'>elsif</span> <span class='int'>1</span> <span class='op'>&lt;=</span> <span class='id identifier rubyid_hue_prime'>hue_prime</span> <span class='op'>&amp;&amp;</span> <span class='id identifier rubyid_hue_prime'>hue_prime</span> <span class='op'>&lt;</span> <span class='int'>2</span>
+        <span class='lbracket'>[</span><span class='id identifier rubyid_x'>x</span><span class='comma'>,</span> <span class='id identifier rubyid_chroma'>chroma</span><span class='comma'>,</span> <span class='float'>0.0</span><span class='rbracket'>]</span>
+      <span class='kw'>elsif</span> <span class='int'>2</span> <span class='op'>&lt;=</span> <span class='id identifier rubyid_hue_prime'>hue_prime</span> <span class='op'>&amp;&amp;</span> <span class='id identifier rubyid_hue_prime'>hue_prime</span> <span class='op'>&lt;</span> <span class='int'>3</span>
+        <span class='lbracket'>[</span><span class='float'>0.0</span><span class='comma'>,</span> <span class='id identifier rubyid_chroma'>chroma</span><span class='comma'>,</span> <span class='id identifier rubyid_x'>x</span><span class='rbracket'>]</span>
+      <span class='kw'>elsif</span> <span class='int'>3</span> <span class='op'>&lt;=</span> <span class='id identifier rubyid_hue_prime'>hue_prime</span> <span class='op'>&amp;&amp;</span> <span class='id identifier rubyid_hue_prime'>hue_prime</span> <span class='op'>&lt;</span> <span class='int'>4</span>
+        <span class='lbracket'>[</span><span class='float'>0.0</span><span class='comma'>,</span> <span class='id identifier rubyid_x'>x</span><span class='comma'>,</span> <span class='id identifier rubyid_chroma'>chroma</span><span class='rbracket'>]</span>
+      <span class='kw'>elsif</span> <span class='int'>4</span> <span class='op'>&lt;=</span> <span class='id identifier rubyid_hue_prime'>hue_prime</span> <span class='op'>&amp;&amp;</span> <span class='id identifier rubyid_hue_prime'>hue_prime</span> <span class='op'>&lt;</span> <span class='int'>5</span>
+        <span class='lbracket'>[</span><span class='id identifier rubyid_x'>x</span><span class='comma'>,</span> <span class='float'>0.0</span><span class='comma'>,</span> <span class='id identifier rubyid_chroma'>chroma</span><span class='rbracket'>]</span>
+      <span class='kw'>else</span>
+        <span class='lbracket'>[</span><span class='id identifier rubyid_chroma'>chroma</span><span class='comma'>,</span> <span class='float'>0.0</span><span class='comma'>,</span> <span class='id identifier rubyid_x'>x</span><span class='rbracket'>]</span>
+      <span class='kw'>end</span>
+    <span class='id identifier rubyid_m'>m</span> <span class='op'>=</span> <span class='id identifier rubyid_brightness'>brightness</span> <span class='op'>-</span> <span class='id identifier rubyid_chroma'>chroma</span>
+    <span class='lbracket'>[</span><span class='id identifier rubyid_r1'>r1</span> <span class='op'>+</span> <span class='id identifier rubyid_m'>m</span><span class='comma'>,</span> <span class='id identifier rubyid_g1'>g1</span> <span class='op'>+</span> <span class='id identifier rubyid_m'>m</span><span class='comma'>,</span> <span class='id identifier rubyid_b1'>b1</span> <span class='op'>+</span> <span class='id identifier rubyid_m'>m</span><span class='comma'>,</span> <span class='ivar'>@alpha</span><span class='rbracket'>]</span>
+  <span class='kw'>end</span>
+
+  <span class='kw'>def</span> <span class='op'>==</span><span class='lparen'>(</span><span class='id identifier rubyid_other'>other</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_other'>other</span><span class='period'>.</span><span class='id identifier rubyid_is_a?'>is_a?</span><span class='lparen'>(</span><span class='const'><span class='object_link'><a href="" title="ContextFree::Color (class)">Color</a></span></span><span class='rparen'>)</span> <span class='op'>&amp;&amp;</span> <span class='ivar'>@hue</span> <span class='op'>==</span> <span class='id identifier rubyid_other'>other</span><span class='period'>.</span><span class='id identifier rubyid_hue'>hue</span> <span class='op'>&amp;&amp;</span> <span class='ivar'>@saturation</span> <span class='op'>==</span> <span class='id identifier rubyid_other'>other</span><span class='period'>.</span><span class='id identifier rubyid_saturation'>saturation</span> <span class='op'>&amp;&amp;</span> <span class='ivar'>@brightness</span> <span class='op'>==</span> <span class='id identifier rubyid_other'>other</span><span class='period'>.</span><span class='id identifier rubyid_brightness'>brightness</span> <span class='op'>&amp;&amp;</span> <span class='ivar'>@alpha</span> <span class='op'>==</span> <span class='id identifier rubyid_other'>other</span><span class='period'>.</span><span class='id identifier rubyid_alpha'>alpha</span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id=""></span>
+      <div class="method_details ">
+  <h3 class="signature " id="saturation-instance_method">
+  
+    #<strong>saturation</strong>  &#x21d2; <tt>Float</tt>  <span class="extras">(readonly)</span>
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    Returns the saturation from 0 to 1.
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Float</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>the saturation from 0 to 1</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+180
+181
+182
+183
+184
+185
+186
+187
+188
+189
+190
+191
+192
+193
+194
+195
+196
+197
+198
+199
+200</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'src/color.rb', line 22</span>
+
+<span class='kw'>class</span> <span class='const'><span class='object_link'><a href="" title="ContextFree::Color (class)">Color</a></span></span>
+  <span class='kw'>class</span> <span class='op'>&lt;&lt;</span> <span class='kw'>self</span>
+    <span class='comment'># Returns black
+</span>    <span class='comment'># @return [Color]
+</span>    <span class='kw'>def</span> <span class='id identifier rubyid_black'>black</span>
+      <span class='const'><span class='object_link'><a href="" title="ContextFree::Color (class)">Color</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="#initialize-instance_method" title="ContextFree::Color#initialize (method)">new</a></span></span> <span class='label'>hue:</span> <span class='int'>0</span><span class='comma'>,</span> <span class='label'>saturation:</span> <span class='int'>0</span><span class='comma'>,</span> <span class='label'>brightness:</span> <span class='int'>0</span><span class='comma'>,</span> <span class='label'>alpha:</span> <span class='int'>1</span>
+    <span class='kw'>end</span>
+
+    <span class='comment'># Returns white
+</span>    <span class='comment'># @return [Color]
+</span>    <span class='kw'>def</span> <span class='id identifier rubyid_white'>white</span>
+      <span class='const'><span class='object_link'><a href="" title="ContextFree::Color (class)">Color</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="#initialize-instance_method" title="ContextFree::Color#initialize (method)">new</a></span></span> <span class='label'>hue:</span> <span class='int'>0</span><span class='comma'>,</span> <span class='label'>saturation:</span> <span class='int'>0</span><span class='comma'>,</span> <span class='label'>brightness:</span> <span class='int'>1</span><span class='comma'>,</span> <span class='label'>alpha:</span> <span class='int'>1</span>
+    <span class='kw'>end</span>
+
+    <span class='comment'># Returns red
+</span>    <span class='comment'># @return [Color]
+</span>    <span class='kw'>def</span> <span class='id identifier rubyid_red'>red</span>
+      <span class='const'><span class='object_link'><a href="" title="ContextFree::Color (class)">Color</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="#initialize-instance_method" title="ContextFree::Color#initialize (method)">new</a></span></span> <span class='label'>hue:</span> <span class='int'>0</span><span class='comma'>,</span> <span class='label'>saturation:</span> <span class='int'>1</span><span class='comma'>,</span> <span class='label'>brightness:</span> <span class='int'>1</span><span class='comma'>,</span> <span class='label'>alpha:</span> <span class='int'>1</span>
+    <span class='kw'>end</span>
+
+    <span class='comment'># Returns orange
+</span>    <span class='comment'># @return [Color]
+</span>    <span class='kw'>def</span> <span class='id identifier rubyid_orange'>orange</span>
+      <span class='const'><span class='object_link'><a href="" title="ContextFree::Color (class)">Color</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="#initialize-instance_method" title="ContextFree::Color#initialize (method)">new</a></span></span> <span class='label'>hue:</span> <span class='int'>30</span><span class='comma'>,</span> <span class='label'>saturation:</span> <span class='int'>1</span><span class='comma'>,</span> <span class='label'>brightness:</span> <span class='int'>1</span><span class='comma'>,</span> <span class='label'>alpha:</span> <span class='int'>1</span>
+    <span class='kw'>end</span>
+
+    <span class='comment'># Returns yellow
+</span>    <span class='comment'># @return [Color]
+</span>    <span class='kw'>def</span> <span class='id identifier rubyid_yellow'>yellow</span>
+      <span class='const'><span class='object_link'><a href="" title="ContextFree::Color (class)">Color</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="#initialize-instance_method" title="ContextFree::Color#initialize (method)">new</a></span></span> <span class='label'>hue:</span> <span class='int'>60</span><span class='comma'>,</span> <span class='label'>saturation:</span> <span class='int'>1</span><span class='comma'>,</span> <span class='label'>brightness:</span> <span class='int'>1</span><span class='comma'>,</span> <span class='label'>alpha:</span> <span class='int'>1</span>
+    <span class='kw'>end</span>
+
+    <span class='comment'># Returns green
+</span>    <span class='comment'># @return [Color]
+</span>    <span class='kw'>def</span> <span class='id identifier rubyid_green'>green</span>
+      <span class='const'><span class='object_link'><a href="" title="ContextFree::Color (class)">Color</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="#initialize-instance_method" title="ContextFree::Color#initialize (method)">new</a></span></span> <span class='label'>hue:</span> <span class='int'>120</span><span class='comma'>,</span> <span class='label'>saturation:</span> <span class='int'>1</span><span class='comma'>,</span> <span class='label'>brightness:</span> <span class='int'>1</span><span class='comma'>,</span> <span class='label'>alpha:</span> <span class='int'>1</span>
+    <span class='kw'>end</span>
+
+    <span class='comment'># Returns cyan
+</span>    <span class='comment'># @return [Color]
+</span>    <span class='kw'>def</span> <span class='id identifier rubyid_cyan'>cyan</span>
+      <span class='const'><span class='object_link'><a href="" title="ContextFree::Color (class)">Color</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="#initialize-instance_method" title="ContextFree::Color#initialize (method)">new</a></span></span> <span class='label'>hue:</span> <span class='int'>180</span><span class='comma'>,</span> <span class='label'>saturation:</span> <span class='int'>1</span><span class='comma'>,</span> <span class='label'>brightness:</span> <span class='int'>1</span><span class='comma'>,</span> <span class='label'>alpha:</span> <span class='int'>1</span>
+    <span class='kw'>end</span>
+
+    <span class='comment'># Returns blue
+</span>    <span class='comment'># @return [Color]
+</span>    <span class='kw'>def</span> <span class='id identifier rubyid_blue'>blue</span>
+      <span class='const'><span class='object_link'><a href="" title="ContextFree::Color (class)">Color</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="#initialize-instance_method" title="ContextFree::Color#initialize (method)">new</a></span></span> <span class='label'>hue:</span> <span class='int'>240</span><span class='comma'>,</span> <span class='label'>saturation:</span> <span class='int'>1</span><span class='comma'>,</span> <span class='label'>brightness:</span> <span class='int'>1</span><span class='comma'>,</span> <span class='label'>alpha:</span> <span class='int'>1</span>
+    <span class='kw'>end</span>
+
+    <span class='comment'># Returns magenta
+</span>    <span class='comment'># @return [Color]
+</span>    <span class='kw'>def</span> <span class='id identifier rubyid_magenta'>magenta</span>
+      <span class='const'><span class='object_link'><a href="" title="ContextFree::Color (class)">Color</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="#initialize-instance_method" title="ContextFree::Color#initialize (method)">new</a></span></span> <span class='label'>hue:</span> <span class='int'>300</span><span class='comma'>,</span> <span class='label'>saturation:</span> <span class='int'>1</span><span class='comma'>,</span> <span class='label'>brightness:</span> <span class='int'>1</span><span class='comma'>,</span> <span class='label'>alpha:</span> <span class='int'>1</span>
+    <span class='kw'>end</span>
+
+    <span class='comment'>##
+</span>    <span class='comment'># Applies the given adjustment (-1 to 1) to the given base value (0 to 1)
+</span>    <span class='comment'>#
+</span>    <span class='comment'># - an +adjustment+ of 0 returns +base+, unchanged
+</span>    <span class='comment'># - a negative adjustment moves the base value closer to 0,
+</span>    <span class='comment'>#   e.g. starting at 0.8 with an adjustment of -0.5 takes away 50% of 0.8,
+</span>    <span class='comment'>#   resulting in 0.4.
+</span>    <span class='comment'># - a positive adjustment moves the base value closer to 1,
+</span>    <span class='comment'>#   e.g. starting at 0.8 with an adjustment of 0.5 adds 50% of 0.2 (this is 1 - 0.8),
+</span>    <span class='comment'>#   resulting in 0.9
+</span>    <span class='comment'>#
+</span>    <span class='comment'># @param base [Float] the base value (0 to 1)
+</span>    <span class='comment'># @param adjustment [Float] the adjustment value (-1 to 1)
+</span>    <span class='comment'># @return [Float] the adjusted value
+</span>    <span class='kw'>def</span> <span class='id identifier rubyid_adjust'>adjust</span><span class='lparen'>(</span><span class='id identifier rubyid_base'>base</span><span class='comma'>,</span> <span class='id identifier rubyid_adjustment'>adjustment</span><span class='rparen'>)</span>
+      <span class='kw'>if</span> <span class='id identifier rubyid_adjustment'>adjustment</span><span class='period'>.</span><span class='id identifier rubyid_zero?'>zero?</span>
+        <span class='id identifier rubyid_base'>base</span>
+      <span class='kw'>elsif</span> <span class='id identifier rubyid_adjustment'>adjustment</span><span class='period'>.</span><span class='id identifier rubyid_negative?'>negative?</span>
+        <span class='id identifier rubyid_base'>base</span> <span class='op'>+</span> <span class='id identifier rubyid_base'>base</span> <span class='op'>*</span> <span class='id identifier rubyid_adjustment'>adjustment</span>
+      <span class='kw'>else</span>
+        <span class='id identifier rubyid_base'>base</span> <span class='op'>+</span> <span class='lparen'>(</span><span class='int'>1</span> <span class='op'>-</span> <span class='id identifier rubyid_base'>base</span><span class='rparen'>)</span> <span class='op'>*</span> <span class='id identifier rubyid_adjustment'>adjustment</span>
+      <span class='kw'>end</span>
+    <span class='kw'>end</span>
+  <span class='kw'>end</span>
+
+  <span class='id identifier rubyid_attr_reader'>attr_reader</span> <span class='symbol'>:hue</span><span class='comma'>,</span> <span class='symbol'>:saturation</span><span class='comma'>,</span> <span class='symbol'>:brightness</span><span class='comma'>,</span> <span class='symbol'>:alpha</span>
+
+  <span class='comment'>##
+</span>  <span class='comment'># Creates a new color with given hue, saturation, brightness and alpha
+</span>  <span class='comment'>#
+</span>  <span class='comment'># @param hue [Float, Integer] the hue in the range +[0, 360)+
+</span>  <span class='comment'># @param saturation [Float, Integer] the saturation from 0 to 1
+</span>  <span class='comment'># @param brightness [Float, Integer] the brightness from 0 to 1
+</span>  <span class='comment'># @param alpha [Float, Integer] the alpha value from 0 to 1
+</span>  <span class='kw'>def</span> <span class='id identifier rubyid_initialize'>initialize</span><span class='lparen'>(</span><span class='label'>hue:</span><span class='comma'>,</span> <span class='label'>saturation:</span><span class='comma'>,</span> <span class='label'>brightness:</span><span class='comma'>,</span> <span class='label'>alpha:</span> <span class='float'>1.0</span><span class='rparen'>)</span>
+    <span class='ivar'>@hue</span> <span class='op'>=</span> <span class='id identifier rubyid_hue'>hue</span> <span class='op'>%</span> <span class='float'>360.0</span>
+    <span class='ivar'>@saturation</span> <span class='op'>=</span> <span class='id identifier rubyid_saturation'>saturation</span><span class='period'>.</span><span class='id identifier rubyid_to_f'>to_f</span><span class='period'>.</span><span class='id identifier rubyid_clamp'>clamp</span><span class='lparen'>(</span><span class='float'>0.0</span><span class='comma'>,</span> <span class='float'>1.0</span><span class='rparen'>)</span>
+    <span class='ivar'>@brightness</span> <span class='op'>=</span> <span class='id identifier rubyid_brightness'>brightness</span><span class='period'>.</span><span class='id identifier rubyid_to_f'>to_f</span><span class='period'>.</span><span class='id identifier rubyid_clamp'>clamp</span><span class='lparen'>(</span><span class='float'>0.0</span><span class='comma'>,</span> <span class='float'>1.0</span><span class='rparen'>)</span>
+    <span class='ivar'>@alpha</span> <span class='op'>=</span> <span class='id identifier rubyid_alpha'>alpha</span><span class='period'>.</span><span class='id identifier rubyid_to_f'>to_f</span><span class='period'>.</span><span class='id identifier rubyid_clamp'>clamp</span><span class='lparen'>(</span><span class='float'>0.0</span><span class='comma'>,</span> <span class='float'>1.0</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_freeze'>freeze</span>
+  <span class='kw'>end</span>
+
+  <span class='comment'>##
+</span>  <span class='comment'># Add the given value to the hue, returning a new color.
+</span>  <span class='comment'>#
+</span>  <span class='comment'># The resulting hue is the current hue plus the given value mod 360.0.
+</span>  <span class='comment'>#
+</span>  <span class='comment'># @param h [Float, Integer] the value to add
+</span>  <span class='comment'># @return [Color]
+</span>  <span class='kw'>def</span> <span class='id identifier rubyid_add_hue'>add_hue</span><span class='lparen'>(</span><span class='id identifier rubyid_h'>h</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_new_hue'>new_hue</span> <span class='op'>=</span> <span class='lparen'>(</span><span class='ivar'>@hue</span> <span class='op'>+</span> <span class='id identifier rubyid_h'>h</span><span class='period'>.</span><span class='id identifier rubyid_to_f'>to_f</span><span class='rparen'>)</span> <span class='op'>%</span> <span class='float'>360.0</span>
+    <span class='const'><span class='object_link'><a href="" title="ContextFree::Color (class)">Color</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="#initialize-instance_method" title="ContextFree::Color#initialize (method)">new</a></span></span><span class='lparen'>(</span><span class='label'>hue:</span> <span class='id identifier rubyid_new_hue'>new_hue</span><span class='comma'>,</span> <span class='label'>saturation:</span> <span class='id identifier rubyid_saturation'>saturation</span><span class='comma'>,</span> <span class='label'>brightness:</span> <span class='id identifier rubyid_brightness'>brightness</span><span class='comma'>,</span> <span class='label'>alpha:</span> <span class='id identifier rubyid_alpha'>alpha</span><span class='rparen'>)</span>
+  <span class='kw'>end</span>
+
+  <span class='comment'>##
+</span>  <span class='comment'># Adjust the saturation value, returning a new color.
+</span>  <span class='comment'>#
+</span>  <span class='comment'># @see Color::adjust
+</span>  <span class='comment'>#
+</span>  <span class='comment'># @param sat [Float, Integer] the adjustment from -1 to 1 (negative moves it closer to 0, positive moves it closer to 1)
+</span>  <span class='comment'># @return [Color]
+</span>  <span class='kw'>def</span> <span class='id identifier rubyid_add_saturation'>add_saturation</span><span class='lparen'>(</span><span class='id identifier rubyid_sat'>sat</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_sat'>sat</span> <span class='op'>=</span> <span class='id identifier rubyid_sat'>sat</span><span class='period'>.</span><span class='id identifier rubyid_to_f'>to_f</span><span class='period'>.</span><span class='id identifier rubyid_clamp'>clamp</span><span class='lparen'>(</span><span class='op'>-</span><span class='float'>1.0</span><span class='comma'>,</span> <span class='float'>1.0</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_new_sat'>new_sat</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="" title="ContextFree::Color (class)">Color</a></span></span><span class='period'>.</span><span class='id identifier rubyid_adjust'><span class='object_link'><a href="#adjust-class_method" title="ContextFree::Color.adjust (method)">adjust</a></span></span> <span class='id identifier rubyid_saturation'>saturation</span><span class='comma'>,</span> <span class='id identifier rubyid_sat'>sat</span>
+    <span class='const'><span class='object_link'><a href="" title="ContextFree::Color (class)">Color</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="#initialize-instance_method" title="ContextFree::Color#initialize (method)">new</a></span></span><span class='lparen'>(</span><span class='label'>hue:</span> <span class='id identifier rubyid_hue'>hue</span><span class='comma'>,</span> <span class='label'>saturation:</span> <span class='id identifier rubyid_new_sat'>new_sat</span><span class='comma'>,</span> <span class='label'>brightness:</span> <span class='id identifier rubyid_brightness'>brightness</span><span class='comma'>,</span> <span class='label'>alpha:</span> <span class='id identifier rubyid_alpha'>alpha</span><span class='rparen'>)</span>
+  <span class='kw'>end</span>
+
+  <span class='comment'>##
+</span>  <span class='comment'># Adjust the brightness value, returning a new color.
+</span>  <span class='comment'>#
+</span>  <span class='comment'># @see Color::adjust
+</span>  <span class='comment'>#
+</span>  <span class='comment'># @param b [Float, Integer] the adjustment from -1 to 1 (negative moves it closer to 0, positive moves it closer to 1)
+</span>  <span class='comment'># @return [Color]
+</span>  <span class='kw'>def</span> <span class='id identifier rubyid_add_brightness'>add_brightness</span><span class='lparen'>(</span><span class='id identifier rubyid_b'>b</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_b'>b</span> <span class='op'>=</span> <span class='id identifier rubyid_b'>b</span><span class='period'>.</span><span class='id identifier rubyid_to_f'>to_f</span><span class='period'>.</span><span class='id identifier rubyid_clamp'>clamp</span><span class='lparen'>(</span><span class='op'>-</span><span class='float'>1.0</span><span class='comma'>,</span> <span class='float'>1.0</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_new_b'>new_b</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="" title="ContextFree::Color (class)">Color</a></span></span><span class='period'>.</span><span class='id identifier rubyid_adjust'><span class='object_link'><a href="#adjust-class_method" title="ContextFree::Color.adjust (method)">adjust</a></span></span> <span class='id identifier rubyid_brightness'>brightness</span><span class='comma'>,</span> <span class='id identifier rubyid_b'>b</span>
+    <span class='const'><span class='object_link'><a href="" title="ContextFree::Color (class)">Color</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="#initialize-instance_method" title="ContextFree::Color#initialize (method)">new</a></span></span><span class='lparen'>(</span><span class='label'>hue:</span> <span class='id identifier rubyid_hue'>hue</span><span class='comma'>,</span> <span class='label'>saturation:</span> <span class='id identifier rubyid_saturation'>saturation</span><span class='comma'>,</span> <span class='label'>brightness:</span> <span class='id identifier rubyid_new_b'>new_b</span><span class='comma'>,</span> <span class='label'>alpha:</span> <span class='id identifier rubyid_alpha'>alpha</span><span class='rparen'>)</span>
+  <span class='kw'>end</span>
+
+  <span class='comment'>##
+</span>  <span class='comment'># Adjust the alpha value, returning a new color.
+</span>  <span class='comment'>#
+</span>  <span class='comment'># @see Color::adjust
+</span>  <span class='comment'>#
+</span>  <span class='comment'># @param alpha [Float, Integer] the adjustment from -1 to 1 (negative moves it closer to 0, positive moves it closer to 1)
+</span>  <span class='comment'># @return [Color]
+</span>  <span class='kw'>def</span> <span class='id identifier rubyid_add_alpha'>add_alpha</span><span class='lparen'>(</span><span class='id identifier rubyid_alpha'>alpha</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_alpha'>alpha</span> <span class='op'>=</span> <span class='id identifier rubyid_alpha'>alpha</span><span class='period'>.</span><span class='id identifier rubyid_to_f'>to_f</span><span class='period'>.</span><span class='id identifier rubyid_clamp'>clamp</span><span class='lparen'>(</span><span class='op'>-</span><span class='float'>1.0</span><span class='comma'>,</span> <span class='float'>1.0</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_new_alpha'>new_alpha</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="" title="ContextFree::Color (class)">Color</a></span></span><span class='period'>.</span><span class='id identifier rubyid_adjust'><span class='object_link'><a href="#adjust-class_method" title="ContextFree::Color.adjust (method)">adjust</a></span></span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_alpha'>alpha</span><span class='comma'>,</span> <span class='id identifier rubyid_alpha'>alpha</span>
+    <span class='const'><span class='object_link'><a href="" title="ContextFree::Color (class)">Color</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="#initialize-instance_method" title="ContextFree::Color#initialize (method)">new</a></span></span><span class='lparen'>(</span><span class='label'>hue:</span> <span class='id identifier rubyid_hue'>hue</span><span class='comma'>,</span> <span class='label'>saturation:</span> <span class='id identifier rubyid_saturation'>saturation</span><span class='comma'>,</span> <span class='label'>brightness:</span> <span class='id identifier rubyid_brightness'>brightness</span><span class='comma'>,</span> <span class='label'>alpha:</span> <span class='id identifier rubyid_new_alpha'>new_alpha</span><span class='rparen'>)</span>
+  <span class='kw'>end</span>
+
+  <span class='comment'>##
+</span>  <span class='comment'># Converts the color to RGBA (with R, G, B, and A from 0 to 1)
+</span>  <span class='comment'>#
+</span>  <span class='comment'># @return [Array&lt;Float&gt;] the color in RGBA format
+</span>  <span class='kw'>def</span> <span class='id identifier rubyid_to_rgba'>to_rgba</span>
+    <span class='id identifier rubyid_chroma'>chroma</span> <span class='op'>=</span> <span class='id identifier rubyid_brightness'>brightness</span> <span class='op'>*</span> <span class='id identifier rubyid_saturation'>saturation</span>
+    <span class='id identifier rubyid_hue_prime'>hue_prime</span> <span class='op'>=</span> <span class='id identifier rubyid_hue'>hue</span> <span class='op'>/</span> <span class='float'>60.0</span>
+    <span class='id identifier rubyid_x'>x</span> <span class='op'>=</span> <span class='id identifier rubyid_chroma'>chroma</span> <span class='op'>*</span> <span class='lparen'>(</span><span class='float'>1.0</span> <span class='op'>-</span> <span class='lparen'>(</span><span class='id identifier rubyid_hue_prime'>hue_prime</span> <span class='op'>%</span> <span class='float'>2.0</span> <span class='op'>-</span> <span class='float'>1.0</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_abs'>abs</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_r1'>r1</span><span class='comma'>,</span> <span class='id identifier rubyid_g1'>g1</span><span class='comma'>,</span> <span class='id identifier rubyid_b1'>b1</span> <span class='op'>=</span>
+      <span class='kw'>if</span> <span class='int'>0</span> <span class='op'>&lt;=</span> <span class='id identifier rubyid_hue_prime'>hue_prime</span> <span class='op'>&amp;&amp;</span> <span class='id identifier rubyid_hue_prime'>hue_prime</span> <span class='op'>&lt;</span> <span class='int'>1</span>
+        <span class='lbracket'>[</span><span class='id identifier rubyid_chroma'>chroma</span><span class='comma'>,</span> <span class='id identifier rubyid_x'>x</span><span class='comma'>,</span> <span class='float'>0.0</span><span class='rbracket'>]</span>
+      <span class='kw'>elsif</span> <span class='int'>1</span> <span class='op'>&lt;=</span> <span class='id identifier rubyid_hue_prime'>hue_prime</span> <span class='op'>&amp;&amp;</span> <span class='id identifier rubyid_hue_prime'>hue_prime</span> <span class='op'>&lt;</span> <span class='int'>2</span>
+        <span class='lbracket'>[</span><span class='id identifier rubyid_x'>x</span><span class='comma'>,</span> <span class='id identifier rubyid_chroma'>chroma</span><span class='comma'>,</span> <span class='float'>0.0</span><span class='rbracket'>]</span>
+      <span class='kw'>elsif</span> <span class='int'>2</span> <span class='op'>&lt;=</span> <span class='id identifier rubyid_hue_prime'>hue_prime</span> <span class='op'>&amp;&amp;</span> <span class='id identifier rubyid_hue_prime'>hue_prime</span> <span class='op'>&lt;</span> <span class='int'>3</span>
+        <span class='lbracket'>[</span><span class='float'>0.0</span><span class='comma'>,</span> <span class='id identifier rubyid_chroma'>chroma</span><span class='comma'>,</span> <span class='id identifier rubyid_x'>x</span><span class='rbracket'>]</span>
+      <span class='kw'>elsif</span> <span class='int'>3</span> <span class='op'>&lt;=</span> <span class='id identifier rubyid_hue_prime'>hue_prime</span> <span class='op'>&amp;&amp;</span> <span class='id identifier rubyid_hue_prime'>hue_prime</span> <span class='op'>&lt;</span> <span class='int'>4</span>
+        <span class='lbracket'>[</span><span class='float'>0.0</span><span class='comma'>,</span> <span class='id identifier rubyid_x'>x</span><span class='comma'>,</span> <span class='id identifier rubyid_chroma'>chroma</span><span class='rbracket'>]</span>
+      <span class='kw'>elsif</span> <span class='int'>4</span> <span class='op'>&lt;=</span> <span class='id identifier rubyid_hue_prime'>hue_prime</span> <span class='op'>&amp;&amp;</span> <span class='id identifier rubyid_hue_prime'>hue_prime</span> <span class='op'>&lt;</span> <span class='int'>5</span>
+        <span class='lbracket'>[</span><span class='id identifier rubyid_x'>x</span><span class='comma'>,</span> <span class='float'>0.0</span><span class='comma'>,</span> <span class='id identifier rubyid_chroma'>chroma</span><span class='rbracket'>]</span>
+      <span class='kw'>else</span>
+        <span class='lbracket'>[</span><span class='id identifier rubyid_chroma'>chroma</span><span class='comma'>,</span> <span class='float'>0.0</span><span class='comma'>,</span> <span class='id identifier rubyid_x'>x</span><span class='rbracket'>]</span>
+      <span class='kw'>end</span>
+    <span class='id identifier rubyid_m'>m</span> <span class='op'>=</span> <span class='id identifier rubyid_brightness'>brightness</span> <span class='op'>-</span> <span class='id identifier rubyid_chroma'>chroma</span>
+    <span class='lbracket'>[</span><span class='id identifier rubyid_r1'>r1</span> <span class='op'>+</span> <span class='id identifier rubyid_m'>m</span><span class='comma'>,</span> <span class='id identifier rubyid_g1'>g1</span> <span class='op'>+</span> <span class='id identifier rubyid_m'>m</span><span class='comma'>,</span> <span class='id identifier rubyid_b1'>b1</span> <span class='op'>+</span> <span class='id identifier rubyid_m'>m</span><span class='comma'>,</span> <span class='ivar'>@alpha</span><span class='rbracket'>]</span>
+  <span class='kw'>end</span>
+
+  <span class='kw'>def</span> <span class='op'>==</span><span class='lparen'>(</span><span class='id identifier rubyid_other'>other</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_other'>other</span><span class='period'>.</span><span class='id identifier rubyid_is_a?'>is_a?</span><span class='lparen'>(</span><span class='const'><span class='object_link'><a href="" title="ContextFree::Color (class)">Color</a></span></span><span class='rparen'>)</span> <span class='op'>&amp;&amp;</span> <span class='ivar'>@hue</span> <span class='op'>==</span> <span class='id identifier rubyid_other'>other</span><span class='period'>.</span><span class='id identifier rubyid_hue'>hue</span> <span class='op'>&amp;&amp;</span> <span class='ivar'>@saturation</span> <span class='op'>==</span> <span class='id identifier rubyid_other'>other</span><span class='period'>.</span><span class='id identifier rubyid_saturation'>saturation</span> <span class='op'>&amp;&amp;</span> <span class='ivar'>@brightness</span> <span class='op'>==</span> <span class='id identifier rubyid_other'>other</span><span class='period'>.</span><span class='id identifier rubyid_brightness'>brightness</span> <span class='op'>&amp;&amp;</span> <span class='ivar'>@alpha</span> <span class='op'>==</span> <span class='id identifier rubyid_other'>other</span><span class='period'>.</span><span class='id identifier rubyid_alpha'>alpha</span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+
+  <div id="class_method_details" class="method_details_list">
+    <h2>Class Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="adjust-class_method">
+  
+    .<strong>adjust</strong>(base, adjustment)  &#x21d2; <tt>Float</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    Applies the given adjustment (-1 to 1) to the given base value (0 to 1)
+
+- an +adjustment+ of 0 returns +base+, unchanged
+- a negative adjustment moves the base value closer to 0,
+  e.g. starting at 0.8 with an adjustment of -0.5 takes away 50% of 0.8,
+  resulting in 0.4.
+- a positive adjustment moves the base value closer to 1,
+  e.g. starting at 0.8 with an adjustment of 0.5 adds 50% of 0.2 (this is 1 - 0.8),
+  resulting in 0.9
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>base</span>
+      
+      
+        <span class='type'>(<tt>Float</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>the base value (0 to 1)</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>adjustment</span>
+      
+      
+        <span class='type'>(<tt>Float</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>the adjustment value (-1 to 1)</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Float</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>the adjusted value</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+92
+93
+94
+95
+96
+97
+98
+99
+100</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'src/color.rb', line 92</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_adjust'>adjust</span><span class='lparen'>(</span><span class='id identifier rubyid_base'>base</span><span class='comma'>,</span> <span class='id identifier rubyid_adjustment'>adjustment</span><span class='rparen'>)</span>
+  <span class='kw'>if</span> <span class='id identifier rubyid_adjustment'>adjustment</span><span class='period'>.</span><span class='id identifier rubyid_zero?'>zero?</span>
+    <span class='id identifier rubyid_base'>base</span>
+  <span class='kw'>elsif</span> <span class='id identifier rubyid_adjustment'>adjustment</span><span class='period'>.</span><span class='id identifier rubyid_negative?'>negative?</span>
+    <span class='id identifier rubyid_base'>base</span> <span class='op'>+</span> <span class='id identifier rubyid_base'>base</span> <span class='op'>*</span> <span class='id identifier rubyid_adjustment'>adjustment</span>
+  <span class='kw'>else</span>
+    <span class='id identifier rubyid_base'>base</span> <span class='op'>+</span> <span class='lparen'>(</span><span class='int'>1</span> <span class='op'>-</span> <span class='id identifier rubyid_base'>base</span><span class='rparen'>)</span> <span class='op'>*</span> <span class='id identifier rubyid_adjustment'>adjustment</span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="black-class_method">
+  
+    .<strong>black</strong>  &#x21d2; <tt><span class='object_link'><a href="" title="ContextFree::Color (class)">Color</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    Returns black
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="" title="ContextFree::Color (class)">Color</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+26
+27
+28</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'src/color.rb', line 26</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_black'>black</span>
+  <span class='const'><span class='object_link'><a href="" title="ContextFree::Color (class)">Color</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="#initialize-instance_method" title="ContextFree::Color#initialize (method)">new</a></span></span> <span class='label'>hue:</span> <span class='int'>0</span><span class='comma'>,</span> <span class='label'>saturation:</span> <span class='int'>0</span><span class='comma'>,</span> <span class='label'>brightness:</span> <span class='int'>0</span><span class='comma'>,</span> <span class='label'>alpha:</span> <span class='int'>1</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="blue-class_method">
+  
+    .<strong>blue</strong>  &#x21d2; <tt><span class='object_link'><a href="" title="ContextFree::Color (class)">Color</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    Returns blue
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="" title="ContextFree::Color (class)">Color</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+68
+69
+70</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'src/color.rb', line 68</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_blue'>blue</span>
+  <span class='const'><span class='object_link'><a href="" title="ContextFree::Color (class)">Color</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="#initialize-instance_method" title="ContextFree::Color#initialize (method)">new</a></span></span> <span class='label'>hue:</span> <span class='int'>240</span><span class='comma'>,</span> <span class='label'>saturation:</span> <span class='int'>1</span><span class='comma'>,</span> <span class='label'>brightness:</span> <span class='int'>1</span><span class='comma'>,</span> <span class='label'>alpha:</span> <span class='int'>1</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="cyan-class_method">
+  
+    .<strong>cyan</strong>  &#x21d2; <tt><span class='object_link'><a href="" title="ContextFree::Color (class)">Color</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    Returns cyan
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="" title="ContextFree::Color (class)">Color</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+62
+63
+64</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'src/color.rb', line 62</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_cyan'>cyan</span>
+  <span class='const'><span class='object_link'><a href="" title="ContextFree::Color (class)">Color</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="#initialize-instance_method" title="ContextFree::Color#initialize (method)">new</a></span></span> <span class='label'>hue:</span> <span class='int'>180</span><span class='comma'>,</span> <span class='label'>saturation:</span> <span class='int'>1</span><span class='comma'>,</span> <span class='label'>brightness:</span> <span class='int'>1</span><span class='comma'>,</span> <span class='label'>alpha:</span> <span class='int'>1</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="green-class_method">
+  
+    .<strong>green</strong>  &#x21d2; <tt><span class='object_link'><a href="" title="ContextFree::Color (class)">Color</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    Returns green
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="" title="ContextFree::Color (class)">Color</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+56
+57
+58</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'src/color.rb', line 56</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_green'>green</span>
+  <span class='const'><span class='object_link'><a href="" title="ContextFree::Color (class)">Color</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="#initialize-instance_method" title="ContextFree::Color#initialize (method)">new</a></span></span> <span class='label'>hue:</span> <span class='int'>120</span><span class='comma'>,</span> <span class='label'>saturation:</span> <span class='int'>1</span><span class='comma'>,</span> <span class='label'>brightness:</span> <span class='int'>1</span><span class='comma'>,</span> <span class='label'>alpha:</span> <span class='int'>1</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="magenta-class_method">
+  
+    .<strong>magenta</strong>  &#x21d2; <tt><span class='object_link'><a href="" title="ContextFree::Color (class)">Color</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    Returns magenta
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="" title="ContextFree::Color (class)">Color</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+74
+75
+76</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'src/color.rb', line 74</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_magenta'>magenta</span>
+  <span class='const'><span class='object_link'><a href="" title="ContextFree::Color (class)">Color</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="#initialize-instance_method" title="ContextFree::Color#initialize (method)">new</a></span></span> <span class='label'>hue:</span> <span class='int'>300</span><span class='comma'>,</span> <span class='label'>saturation:</span> <span class='int'>1</span><span class='comma'>,</span> <span class='label'>brightness:</span> <span class='int'>1</span><span class='comma'>,</span> <span class='label'>alpha:</span> <span class='int'>1</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="orange-class_method">
+  
+    .<strong>orange</strong>  &#x21d2; <tt><span class='object_link'><a href="" title="ContextFree::Color (class)">Color</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    Returns orange
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="" title="ContextFree::Color (class)">Color</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+44
+45
+46</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'src/color.rb', line 44</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_orange'>orange</span>
+  <span class='const'><span class='object_link'><a href="" title="ContextFree::Color (class)">Color</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="#initialize-instance_method" title="ContextFree::Color#initialize (method)">new</a></span></span> <span class='label'>hue:</span> <span class='int'>30</span><span class='comma'>,</span> <span class='label'>saturation:</span> <span class='int'>1</span><span class='comma'>,</span> <span class='label'>brightness:</span> <span class='int'>1</span><span class='comma'>,</span> <span class='label'>alpha:</span> <span class='int'>1</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="red-class_method">
+  
+    .<strong>red</strong>  &#x21d2; <tt><span class='object_link'><a href="" title="ContextFree::Color (class)">Color</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    Returns red
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="" title="ContextFree::Color (class)">Color</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+38
+39
+40</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'src/color.rb', line 38</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_red'>red</span>
+  <span class='const'><span class='object_link'><a href="" title="ContextFree::Color (class)">Color</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="#initialize-instance_method" title="ContextFree::Color#initialize (method)">new</a></span></span> <span class='label'>hue:</span> <span class='int'>0</span><span class='comma'>,</span> <span class='label'>saturation:</span> <span class='int'>1</span><span class='comma'>,</span> <span class='label'>brightness:</span> <span class='int'>1</span><span class='comma'>,</span> <span class='label'>alpha:</span> <span class='int'>1</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="white-class_method">
+  
+    .<strong>white</strong>  &#x21d2; <tt><span class='object_link'><a href="" title="ContextFree::Color (class)">Color</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    Returns white
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="" title="ContextFree::Color (class)">Color</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+32
+33
+34</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'src/color.rb', line 32</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_white'>white</span>
+  <span class='const'><span class='object_link'><a href="" title="ContextFree::Color (class)">Color</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="#initialize-instance_method" title="ContextFree::Color#initialize (method)">new</a></span></span> <span class='label'>hue:</span> <span class='int'>0</span><span class='comma'>,</span> <span class='label'>saturation:</span> <span class='int'>0</span><span class='comma'>,</span> <span class='label'>brightness:</span> <span class='int'>1</span><span class='comma'>,</span> <span class='label'>alpha:</span> <span class='int'>1</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="yellow-class_method">
+  
+    .<strong>yellow</strong>  &#x21d2; <tt><span class='object_link'><a href="" title="ContextFree::Color (class)">Color</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    Returns yellow
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="" title="ContextFree::Color (class)">Color</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+50
+51
+52</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'src/color.rb', line 50</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_yellow'>yellow</span>
+  <span class='const'><span class='object_link'><a href="" title="ContextFree::Color (class)">Color</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="#initialize-instance_method" title="ContextFree::Color#initialize (method)">new</a></span></span> <span class='label'>hue:</span> <span class='int'>60</span><span class='comma'>,</span> <span class='label'>saturation:</span> <span class='int'>1</span><span class='comma'>,</span> <span class='label'>brightness:</span> <span class='int'>1</span><span class='comma'>,</span> <span class='label'>alpha:</span> <span class='int'>1</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+  <div id="instance_method_details" class="method_details_list">
+    <h2>Instance Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="==-instance_method">
+  
+    #<strong>==</strong>(other)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+197
+198
+199</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'src/color.rb', line 197</span>
+
+<span class='kw'>def</span> <span class='op'>==</span><span class='lparen'>(</span><span class='id identifier rubyid_other'>other</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_other'>other</span><span class='period'>.</span><span class='id identifier rubyid_is_a?'>is_a?</span><span class='lparen'>(</span><span class='const'><span class='object_link'><a href="" title="ContextFree::Color (class)">Color</a></span></span><span class='rparen'>)</span> <span class='op'>&amp;&amp;</span> <span class='ivar'>@hue</span> <span class='op'>==</span> <span class='id identifier rubyid_other'>other</span><span class='period'>.</span><span class='id identifier rubyid_hue'>hue</span> <span class='op'>&amp;&amp;</span> <span class='ivar'>@saturation</span> <span class='op'>==</span> <span class='id identifier rubyid_other'>other</span><span class='period'>.</span><span class='id identifier rubyid_saturation'>saturation</span> <span class='op'>&amp;&amp;</span> <span class='ivar'>@brightness</span> <span class='op'>==</span> <span class='id identifier rubyid_other'>other</span><span class='period'>.</span><span class='id identifier rubyid_brightness'>brightness</span> <span class='op'>&amp;&amp;</span> <span class='ivar'>@alpha</span> <span class='op'>==</span> <span class='id identifier rubyid_other'>other</span><span class='period'>.</span><span class='id identifier rubyid_alpha'>alpha</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="add_alpha-instance_method">
+  
+    #<strong>add_alpha</strong>(alpha)  &#x21d2; <tt><span class='object_link'><a href="" title="ContextFree::Color (class)">Color</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    Adjust the alpha value, returning a new color.
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>alpha</span>
+      
+      
+        <span class='type'>(<tt>Float</tt>, <tt>Integer</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>the adjustment from -1 to 1 (negative moves it closer to 0, positive moves it closer to 1)</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="" title="ContextFree::Color (class)">Color</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li>Color::adjust</li>
+    
+  </ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+165
+166
+167
+168
+169</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'src/color.rb', line 165</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_add_alpha'>add_alpha</span><span class='lparen'>(</span><span class='id identifier rubyid_alpha'>alpha</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_alpha'>alpha</span> <span class='op'>=</span> <span class='id identifier rubyid_alpha'>alpha</span><span class='period'>.</span><span class='id identifier rubyid_to_f'>to_f</span><span class='period'>.</span><span class='id identifier rubyid_clamp'>clamp</span><span class='lparen'>(</span><span class='op'>-</span><span class='float'>1.0</span><span class='comma'>,</span> <span class='float'>1.0</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_new_alpha'>new_alpha</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="" title="ContextFree::Color (class)">Color</a></span></span><span class='period'>.</span><span class='id identifier rubyid_adjust'><span class='object_link'><a href="#adjust-class_method" title="ContextFree::Color.adjust (method)">adjust</a></span></span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_alpha'>alpha</span><span class='comma'>,</span> <span class='id identifier rubyid_alpha'>alpha</span>
+  <span class='const'><span class='object_link'><a href="" title="ContextFree::Color (class)">Color</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="#initialize-instance_method" title="ContextFree::Color#initialize (method)">new</a></span></span><span class='lparen'>(</span><span class='label'>hue:</span> <span class='id identifier rubyid_hue'>hue</span><span class='comma'>,</span> <span class='label'>saturation:</span> <span class='id identifier rubyid_saturation'>saturation</span><span class='comma'>,</span> <span class='label'>brightness:</span> <span class='id identifier rubyid_brightness'>brightness</span><span class='comma'>,</span> <span class='label'>alpha:</span> <span class='id identifier rubyid_new_alpha'>new_alpha</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="add_brightness-instance_method">
+  
+    #<strong>add_brightness</strong>(b)  &#x21d2; <tt><span class='object_link'><a href="" title="ContextFree::Color (class)">Color</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    Adjust the brightness value, returning a new color.
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>b</span>
+      
+      
+        <span class='type'>(<tt>Float</tt>, <tt>Integer</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>the adjustment from -1 to 1 (negative moves it closer to 0, positive moves it closer to 1)</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="" title="ContextFree::Color (class)">Color</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li>Color::adjust</li>
+    
+  </ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+152
+153
+154
+155
+156</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'src/color.rb', line 152</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_add_brightness'>add_brightness</span><span class='lparen'>(</span><span class='id identifier rubyid_b'>b</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_b'>b</span> <span class='op'>=</span> <span class='id identifier rubyid_b'>b</span><span class='period'>.</span><span class='id identifier rubyid_to_f'>to_f</span><span class='period'>.</span><span class='id identifier rubyid_clamp'>clamp</span><span class='lparen'>(</span><span class='op'>-</span><span class='float'>1.0</span><span class='comma'>,</span> <span class='float'>1.0</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_new_b'>new_b</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="" title="ContextFree::Color (class)">Color</a></span></span><span class='period'>.</span><span class='id identifier rubyid_adjust'><span class='object_link'><a href="#adjust-class_method" title="ContextFree::Color.adjust (method)">adjust</a></span></span> <span class='id identifier rubyid_brightness'>brightness</span><span class='comma'>,</span> <span class='id identifier rubyid_b'>b</span>
+  <span class='const'><span class='object_link'><a href="" title="ContextFree::Color (class)">Color</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="#initialize-instance_method" title="ContextFree::Color#initialize (method)">new</a></span></span><span class='lparen'>(</span><span class='label'>hue:</span> <span class='id identifier rubyid_hue'>hue</span><span class='comma'>,</span> <span class='label'>saturation:</span> <span class='id identifier rubyid_saturation'>saturation</span><span class='comma'>,</span> <span class='label'>brightness:</span> <span class='id identifier rubyid_new_b'>new_b</span><span class='comma'>,</span> <span class='label'>alpha:</span> <span class='id identifier rubyid_alpha'>alpha</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="add_hue-instance_method">
+  
+    #<strong>add_hue</strong>(h)  &#x21d2; <tt><span class='object_link'><a href="" title="ContextFree::Color (class)">Color</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    Add the given value to the hue, returning a new color.
+
+The resulting hue is the current hue plus the given value mod 360.0.
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>h</span>
+      
+      
+        <span class='type'>(<tt>Float</tt>, <tt>Integer</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>the value to add</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="" title="ContextFree::Color (class)">Color</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+127
+128
+129
+130</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'src/color.rb', line 127</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_add_hue'>add_hue</span><span class='lparen'>(</span><span class='id identifier rubyid_h'>h</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_new_hue'>new_hue</span> <span class='op'>=</span> <span class='lparen'>(</span><span class='ivar'>@hue</span> <span class='op'>+</span> <span class='id identifier rubyid_h'>h</span><span class='period'>.</span><span class='id identifier rubyid_to_f'>to_f</span><span class='rparen'>)</span> <span class='op'>%</span> <span class='float'>360.0</span>
+  <span class='const'><span class='object_link'><a href="" title="ContextFree::Color (class)">Color</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="#initialize-instance_method" title="ContextFree::Color#initialize (method)">new</a></span></span><span class='lparen'>(</span><span class='label'>hue:</span> <span class='id identifier rubyid_new_hue'>new_hue</span><span class='comma'>,</span> <span class='label'>saturation:</span> <span class='id identifier rubyid_saturation'>saturation</span><span class='comma'>,</span> <span class='label'>brightness:</span> <span class='id identifier rubyid_brightness'>brightness</span><span class='comma'>,</span> <span class='label'>alpha:</span> <span class='id identifier rubyid_alpha'>alpha</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="add_saturation-instance_method">
+  
+    #<strong>add_saturation</strong>(sat)  &#x21d2; <tt><span class='object_link'><a href="" title="ContextFree::Color (class)">Color</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    Adjust the saturation value, returning a new color.
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>sat</span>
+      
+      
+        <span class='type'>(<tt>Float</tt>, <tt>Integer</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>the adjustment from -1 to 1 (negative moves it closer to 0, positive moves it closer to 1)</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="" title="ContextFree::Color (class)">Color</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li>Color::adjust</li>
+    
+  </ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+139
+140
+141
+142
+143</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'src/color.rb', line 139</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_add_saturation'>add_saturation</span><span class='lparen'>(</span><span class='id identifier rubyid_sat'>sat</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_sat'>sat</span> <span class='op'>=</span> <span class='id identifier rubyid_sat'>sat</span><span class='period'>.</span><span class='id identifier rubyid_to_f'>to_f</span><span class='period'>.</span><span class='id identifier rubyid_clamp'>clamp</span><span class='lparen'>(</span><span class='op'>-</span><span class='float'>1.0</span><span class='comma'>,</span> <span class='float'>1.0</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_new_sat'>new_sat</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="" title="ContextFree::Color (class)">Color</a></span></span><span class='period'>.</span><span class='id identifier rubyid_adjust'><span class='object_link'><a href="#adjust-class_method" title="ContextFree::Color.adjust (method)">adjust</a></span></span> <span class='id identifier rubyid_saturation'>saturation</span><span class='comma'>,</span> <span class='id identifier rubyid_sat'>sat</span>
+  <span class='const'><span class='object_link'><a href="" title="ContextFree::Color (class)">Color</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="#initialize-instance_method" title="ContextFree::Color#initialize (method)">new</a></span></span><span class='lparen'>(</span><span class='label'>hue:</span> <span class='id identifier rubyid_hue'>hue</span><span class='comma'>,</span> <span class='label'>saturation:</span> <span class='id identifier rubyid_new_sat'>new_sat</span><span class='comma'>,</span> <span class='label'>brightness:</span> <span class='id identifier rubyid_brightness'>brightness</span><span class='comma'>,</span> <span class='label'>alpha:</span> <span class='id identifier rubyid_alpha'>alpha</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="to_rgba-instance_method">
+  
+    #<strong>to_rgba</strong>  &#x21d2; <tt>Array&lt;Float&gt;</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    Converts the color to RGBA (with R, G, B, and A from 0 to 1)
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Array&lt;Float&gt;</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>the color in RGBA format</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+175
+176
+177
+178
+179
+180
+181
+182
+183
+184
+185
+186
+187
+188
+189
+190
+191
+192
+193
+194
+195</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'src/color.rb', line 175</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_to_rgba'>to_rgba</span>
+  <span class='id identifier rubyid_chroma'>chroma</span> <span class='op'>=</span> <span class='id identifier rubyid_brightness'>brightness</span> <span class='op'>*</span> <span class='id identifier rubyid_saturation'>saturation</span>
+  <span class='id identifier rubyid_hue_prime'>hue_prime</span> <span class='op'>=</span> <span class='id identifier rubyid_hue'>hue</span> <span class='op'>/</span> <span class='float'>60.0</span>
+  <span class='id identifier rubyid_x'>x</span> <span class='op'>=</span> <span class='id identifier rubyid_chroma'>chroma</span> <span class='op'>*</span> <span class='lparen'>(</span><span class='float'>1.0</span> <span class='op'>-</span> <span class='lparen'>(</span><span class='id identifier rubyid_hue_prime'>hue_prime</span> <span class='op'>%</span> <span class='float'>2.0</span> <span class='op'>-</span> <span class='float'>1.0</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_abs'>abs</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_r1'>r1</span><span class='comma'>,</span> <span class='id identifier rubyid_g1'>g1</span><span class='comma'>,</span> <span class='id identifier rubyid_b1'>b1</span> <span class='op'>=</span>
+    <span class='kw'>if</span> <span class='int'>0</span> <span class='op'>&lt;=</span> <span class='id identifier rubyid_hue_prime'>hue_prime</span> <span class='op'>&amp;&amp;</span> <span class='id identifier rubyid_hue_prime'>hue_prime</span> <span class='op'>&lt;</span> <span class='int'>1</span>
+      <span class='lbracket'>[</span><span class='id identifier rubyid_chroma'>chroma</span><span class='comma'>,</span> <span class='id identifier rubyid_x'>x</span><span class='comma'>,</span> <span class='float'>0.0</span><span class='rbracket'>]</span>
+    <span class='kw'>elsif</span> <span class='int'>1</span> <span class='op'>&lt;=</span> <span class='id identifier rubyid_hue_prime'>hue_prime</span> <span class='op'>&amp;&amp;</span> <span class='id identifier rubyid_hue_prime'>hue_prime</span> <span class='op'>&lt;</span> <span class='int'>2</span>
+      <span class='lbracket'>[</span><span class='id identifier rubyid_x'>x</span><span class='comma'>,</span> <span class='id identifier rubyid_chroma'>chroma</span><span class='comma'>,</span> <span class='float'>0.0</span><span class='rbracket'>]</span>
+    <span class='kw'>elsif</span> <span class='int'>2</span> <span class='op'>&lt;=</span> <span class='id identifier rubyid_hue_prime'>hue_prime</span> <span class='op'>&amp;&amp;</span> <span class='id identifier rubyid_hue_prime'>hue_prime</span> <span class='op'>&lt;</span> <span class='int'>3</span>
+      <span class='lbracket'>[</span><span class='float'>0.0</span><span class='comma'>,</span> <span class='id identifier rubyid_chroma'>chroma</span><span class='comma'>,</span> <span class='id identifier rubyid_x'>x</span><span class='rbracket'>]</span>
+    <span class='kw'>elsif</span> <span class='int'>3</span> <span class='op'>&lt;=</span> <span class='id identifier rubyid_hue_prime'>hue_prime</span> <span class='op'>&amp;&amp;</span> <span class='id identifier rubyid_hue_prime'>hue_prime</span> <span class='op'>&lt;</span> <span class='int'>4</span>
+      <span class='lbracket'>[</span><span class='float'>0.0</span><span class='comma'>,</span> <span class='id identifier rubyid_x'>x</span><span class='comma'>,</span> <span class='id identifier rubyid_chroma'>chroma</span><span class='rbracket'>]</span>
+    <span class='kw'>elsif</span> <span class='int'>4</span> <span class='op'>&lt;=</span> <span class='id identifier rubyid_hue_prime'>hue_prime</span> <span class='op'>&amp;&amp;</span> <span class='id identifier rubyid_hue_prime'>hue_prime</span> <span class='op'>&lt;</span> <span class='int'>5</span>
+      <span class='lbracket'>[</span><span class='id identifier rubyid_x'>x</span><span class='comma'>,</span> <span class='float'>0.0</span><span class='comma'>,</span> <span class='id identifier rubyid_chroma'>chroma</span><span class='rbracket'>]</span>
+    <span class='kw'>else</span>
+      <span class='lbracket'>[</span><span class='id identifier rubyid_chroma'>chroma</span><span class='comma'>,</span> <span class='float'>0.0</span><span class='comma'>,</span> <span class='id identifier rubyid_x'>x</span><span class='rbracket'>]</span>
+    <span class='kw'>end</span>
+  <span class='id identifier rubyid_m'>m</span> <span class='op'>=</span> <span class='id identifier rubyid_brightness'>brightness</span> <span class='op'>-</span> <span class='id identifier rubyid_chroma'>chroma</span>
+  <span class='lbracket'>[</span><span class='id identifier rubyid_r1'>r1</span> <span class='op'>+</span> <span class='id identifier rubyid_m'>m</span><span class='comma'>,</span> <span class='id identifier rubyid_g1'>g1</span> <span class='op'>+</span> <span class='id identifier rubyid_m'>m</span><span class='comma'>,</span> <span class='id identifier rubyid_b1'>b1</span> <span class='op'>+</span> <span class='id identifier rubyid_m'>m</span><span class='comma'>,</span> <span class='ivar'>@alpha</span><span class='rbracket'>]</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+</div>
+
+      <div id="footer">
+  Generated on Fri Apr 19 21:34:35 2024 by
+  <a href="https://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.9.36 (ruby-3.2.2).
+</div>
+
+    </div>
+  </body>
+</html>

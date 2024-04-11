@@ -1,0 +1,13 @@
+startshape shapes
+
+shape shapes {
+  // The default square is black, and size "1".
+  // The shape adjustment between square brackets
+  // adds 0 to the default hue, and
+  // adds 1 to the default saturation and brightness,
+  // yielding a bright red color
+  SQUARE [hue 0 saturation 1 brightness 1]
+  // The shape adjustment can also move a shape to the
+  // right (x 2).
+  TRIANGLE [x 2 hue 240 saturation 1 brightness 1]
+}

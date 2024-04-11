@@ -1,0 +1,32 @@
+module ContextFree
+  class Transform
+    attr_reader matrix: Matrix
+
+    def self.identity: () -> Transform
+    def self.translate_x: (Float | Integer x) -> Transform
+    def self.translate_y: (Float | Integer y) -> Transform
+    def self.scale: (Float | Integer s) -> Transform
+    def self.scale_x: (Float | Integer x) -> Transform
+    def self.scale_y: (Float | Integer y) -> Transform
+    def self.rotate: (Float | Integer degrees) -> Transform
+
+    def initialize: (Matrix matrix) -> void
+    def translate_x: (Float | Integer x) -> Transform
+    def translate_y: (Float | Integer y) -> Transform
+    def rotate: (Float | Integer degrees) -> Transform
+    def scale: (Float | Integer s) -> Transform
+    def scale_x: (Float | Integer x) -> Transform
+    def scale_y: (Float | Integer y) -> Transform
+    def scale_factor: () -> Float
+    def *:
+      (Transform other) -> Transform |
+      ([Float, Float] other) -> [Float, Float] |
+      (Array[[Float, Float]] other) -> Array[[Float, Float]]
+
+    private
+
+    def apply_transform: (Transform transform) -> Transform
+    def apply_vertices: (Array[[Float, Float]] vertices) -> Array[[Float, Float]]
+    def apply_vertex: ([Float, Float] vertex) -> [Float, Float]
+  end
+end

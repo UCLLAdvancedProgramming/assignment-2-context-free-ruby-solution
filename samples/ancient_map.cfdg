@@ -1,0 +1,30 @@
+startshape ancient_map
+
+CF::Background = [ brightness -.1 saturation .25 hue 44 ]
+
+shape ancient_map {
+    wall [brightness .1 hue 34]
+    wall [brightness .1 rotate 180 hue 34]
+}
+
+shape wall
+
+rule {
+    wall [y .95 rotate 1 size .975]
+}
+
+rule {
+    SQUARE []
+    wall [y 0.95 rotate -1 size 0.975 saturation 0.1 brightness .01 hue .1]
+}
+
+rule 0.09 {
+    SQUARE []
+    wall [y 0.95 rotate 90 size 0.975]
+    wall [y 0.95 rotate -90 size 0.975]
+}
+
+rule 0.005 {
+    wall [y 0.97 rotate 90 size 1.5]
+    wall [y 0.97 rotate -90 size 1.5]
+}

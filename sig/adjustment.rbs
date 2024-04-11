@@ -1,0 +1,23 @@
+module ContextFree
+  class Adjustment
+    attr_reader x: Float?
+    attr_reader y: Float?
+    attr_reader rotate: Float?
+    attr_reader size: [Float, Float]?
+    attr_reader hue: Float?
+    attr_reader saturation: Float?
+    attr_reader brightness: Float?
+    attr_reader alpha: Float?
+
+    def initialize: (
+        ?x: Float | Integer | nil,
+        ?y: Float | Integer | nil,
+        ?rotate: Float | Integer | nil,
+        ?size: Float | [Float, Float] | nil,
+        ?hue: Float | Integer | nil,
+        ?saturation: Float | Integer | nil,
+        ?brightness: Float | Integer | nil,
+        ?alpha: Float | Integer | nil
+      ) -> void
+  end
+end

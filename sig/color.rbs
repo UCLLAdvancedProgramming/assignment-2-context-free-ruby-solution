@@ -1,0 +1,31 @@
+module ContextFree
+  class Color
+    def self.adjust: (Float base, Float adjustment) -> Float
+    def self.black: () -> Color
+    def self.white: () -> Color
+    def self.red: () -> Color
+    def self.orange: () -> Color
+    def self.yellow: () -> Color
+    def self.green: () -> Color
+    def self.cyan: () -> Color
+    def self.blue: () -> Color
+    def self.magenta: () -> Color
+
+    attr_reader hue: Float
+    attr_reader saturation: Float
+    attr_reader brightness: Float
+    attr_reader alpha: Float
+
+    def initialize: (
+        hue: Float | Integer,
+        saturation: Float | Integer,
+        brightness: Float | Integer,
+        ?alpha: Float | Integer,
+      ) -> void
+    def add_hue: (Float | Integer h) -> Color
+    def add_saturation: (Float | Integer sat) -> Color
+    def add_brightness: (Float | Integer b) -> Color
+    def add_alpha: (Float | Integer alpha) -> Color
+    def to_rgba: () -> [Float, Float, Float, Float]
+  end
+end

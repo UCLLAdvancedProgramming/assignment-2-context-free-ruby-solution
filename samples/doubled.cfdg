@@ -1,0 +1,11 @@
+startshape doubled
+
+shape shapes {
+    SQUARE [hue 0 saturation 1 brightness 1]
+    TRIANGLE [x 2 hue 240 saturation 1 brightness 1]
+}
+
+shape doubled {
+    shapes []
+    shapes [y 2]
+}

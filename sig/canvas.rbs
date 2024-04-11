@@ -1,0 +1,34 @@
+module ContextFree
+  class Canvas < Ruby2D::Window
+    @bounds: [[Float, Float], [Float, Float]]?
+    @camera: Transform?
+    @draw_diagnostics: bool
+    @drawn_shapes: Array[Shape]
+    @grammar: Grammar
+    @primitive_shapes: Array[Shape]
+    @running: bool
+    @steps_per_update: Integer
+    @unevaluated_shapes: Array[Shape]
+    @update_count: Integer
+    @update_counter: Ruby2D::Text
+
+    def initialize: (Grammar grammar, ?fps_limit: Integer, ?steps_per_update: Integer) -> void
+    def update: () -> void
+    def render: () -> void
+
+    private
+
+    def perform_update_step: () -> void
+    def update_diagnostics: () -> void
+    def render_diagnostics: () -> void
+    def button_down: (Struct[untyped] event) -> void
+    def bg_color: () -> Color
+    def update_bounds: () -> void
+    def update_camera: () -> void
+    def draw_shapes: (Array[Shape] shapes) -> void
+    def draw_shape: (Shape shape) -> void
+    def draw_quad: ([[Float, Float], [Float, Float], [Float, Float], [Float, Float]] vertices, Color color) -> void
+    def draw_triangle: ([[Float, Float], [Float, Float], [Float, Float]] vertices, Color color) -> void
+    def cull_small_shapes: (Array[Shape] shapes) -> void
+  end
+end

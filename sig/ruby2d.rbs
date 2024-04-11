@@ -1,0 +1,7 @@
+module Ruby2D
+  class Window
+  end
+
+  class Text
+  end
+end

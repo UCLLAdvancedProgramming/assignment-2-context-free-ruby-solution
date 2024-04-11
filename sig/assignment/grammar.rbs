@@ -1,0 +1,16 @@
+module ContextFree
+  class Grammar
+    @rng: RNG
+    @start_shape: Shape?
+    @bg_color_adjustment: Adjustment?
+    @min_size: Float
+
+    attr_accessor rng: RNG
+    attr_accessor start_shape: Shape
+    attr_accessor bg_color_adjustment: Adjustment
+    attr_accessor min_size: Float
+
+    def initialize: () -> void
+    def eval_shape: (Shape shape) -> [Array[Shape], Array[Shape]]
+  end
+end

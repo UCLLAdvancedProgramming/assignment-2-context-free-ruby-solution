@@ -1,0 +1,35 @@
+require:
+  - rubocop-rspec
+AllCops:
+  Exclude:
+    - 'samples/**/*'
+    - 'vendor/**/*'
+Layout/LineLength:
+  Enabled: false
+Metrics/AbcSize:
+  Enabled: false
+Metrics/ClassLength:
+  Enabled: false
+Metrics/CyclomaticComplexity:
+  Enabled: false
+Metrics/MethodLength:
+  Enabled: false
+Metrics/ParameterLists:
+  Enabled: false
+Metrics/PerceivedComplexity:
+  Enabled: false
+Naming/MethodParameterName:
+  AllowedNames:
+    - x
+    - y
+    - s
+    - h
+    - b
+RSpec/ExampleLength:
+  Enabled: false
+RSpec/MultipleExpectations:
+  Enabled: false
+Style/ClassVars:
+  Enabled: false
+Style/YodaCondition:
+  Enabled: false

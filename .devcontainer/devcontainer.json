@@ -1,0 +1,14 @@
+{
+    "name": "CFRuby",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "Shopify.ruby-lsp",
+                "EditorConfig.EditorConfig"
+            ]
+        }
+    }
+}

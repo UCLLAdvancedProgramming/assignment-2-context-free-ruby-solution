@@ -1,0 +1,7 @@
+module ContextFree
+  module DSL
+    @@grammar: Grammar
+
+    def self.grammar: () -> Grammar
+  end
+end

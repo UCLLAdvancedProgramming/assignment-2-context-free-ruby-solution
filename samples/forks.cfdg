@@ -1,0 +1,22 @@
+startshape forks(12) [brightness .8 saturation .5]
+
+CF::Background = [brightness -.8]
+
+shape forks(nb_forks) {
+    loop nb_forks [rotate (360/nb_forks) hue (360/nb_forks)] fork []
+}
+
+shape fork {
+    SQUARE [y 10 size 1 15]
+    teeth [y 17.5]
+}
+
+shape teeth {
+    SQUARE [size 2.7 1]
+    loop 3 [x 1]
+        tooth [x -1 y 2.5]
+}
+
+shape tooth {
+    TRIANGLE [size 0.5 8]
+}

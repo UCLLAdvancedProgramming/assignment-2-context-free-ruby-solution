@@ -1,0 +1,7 @@
+startshape squares
+
+shape squares {
+    SQUARE []
+    SQUARE [x 2 rotate 30 hue 20 saturation 1 brightness .8]
+    SQUARE [x -2 rotate 30 hue -20 saturation 1 brightness .8]
+}

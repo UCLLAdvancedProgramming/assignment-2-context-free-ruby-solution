@@ -1,0 +1,21 @@
+startshape seed
+
+CF::MinimumSize = 0.1
+
+shape seed
+
+rule {
+    SQUARE []
+    seed [y 1 size .99 rotate 1.5]
+}
+
+rule .05 {
+    seed [size -1 1]
+}
+
+rule .05 {
+    SQUARE []
+    seed [y 1 size -.95 .95 rotate 1.5 brightness -.7]
+    seed [y 1 x 1 size .6 rotate -40 brightness -.7]
+    seed [y 1 x -1 size -.5 .5 rotate 40 brightness -.7]
+}

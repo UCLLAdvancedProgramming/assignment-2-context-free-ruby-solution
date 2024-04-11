@@ -1,0 +1,14 @@
+module ContextFree
+  SQUARE_VERTICES: [[Float, Float], [Float, Float], [Float, Float], [Float, Float]]
+  TRIANGLE_VERTICES: [[Float, Float], [Float, Float], [Float, Float]]
+
+  class Shape
+    def self.bounds: (Array[Shape] shapes) -> [[Float, Float], [Float, Float]]
+    def self.vertices: (Symbol primitive_shape) -> Array[[Float, Float]]
+
+    attr_reader name: Symbol
+    attr_reader properties: Properties
+
+    def initialize: (Symbol name, Properties properties) -> void
+  end
+end

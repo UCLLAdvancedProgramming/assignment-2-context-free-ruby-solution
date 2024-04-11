@@ -1,0 +1,21 @@
+startshape squares
+
+shape squares {
+    loop 10 [y 1.5]
+        hsquares []
+}
+
+shape hsquares {
+    loop 10 [x 1.5]
+        red_or_black []
+}
+
+shape red_or_black
+
+rule {
+    SQUARE [hue 0 brightness 1 saturation 1]
+}
+
+rule 3 {
+    SQUARE []
+}

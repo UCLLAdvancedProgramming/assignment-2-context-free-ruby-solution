@@ -1,0 +1,15 @@
+startshape myshape
+
+shape myshape {
+    mysquare []
+    
+    rotsquare [x 40 y 40]
+}
+
+shape rotsquare {
+    mysquare [rotate 30]
+}
+
+shape mysquare {
+    SQUARE [size 20 20]
+}
