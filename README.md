@@ -93,31 +93,6 @@ The parts that you'll have to implement are:
 - The [`DSL`](src/assignment/dsl.rb) module.
 - The [`Grammar`](src/assignment/grammar.rb) class.
 
-You can use [bundler](https://bundler.io/) to install the required packages
-(called gems in the Ruby ecosystem). You can install the dependencies with:
-
-```shell
-$ bundle install
-```
-
-You may experience issues due to the maximum path length limit on Windows. You
-put your repository at a short path, or you can
-[follow these instructions](https://www.autodesk.com/support/technical/article/caas/sfdcarticles/sfdcarticles/The-Windows-10-default-path-length-limitation-MAX-PATH-is-256-characters.html)
-to enable long path support.
-
-If you are on Linux, you may need to install some extra dependencies. On
-Debian or Ubuntu, you can use:
-
-```shell
-$ sudo apt install libsdl2-dev libsdl2-image-dev libsdl2-mixer-dev libsdl2-ttf-dev
-```
-
-On Fedora:
-
-```shell
-$ sudo dnf install SDL2-devel SDL2_image-devel SDL2_mixer-devel SDL2_ttf-devel
-```
-
 [`main.rb`](src/main.rb) is the entry point of the application. Here's an example of how it can be used:
 
 ```shell
@@ -139,6 +114,50 @@ is executed within the context of that module, and any methods from that module 
 be used.
 
 Afterwards, we take the grammar from that module, and give it to our `Canvas`.
+
+## Installing dependencies
+
+You can use [bundler](https://bundler.io/) to install the required packages
+(called gems in the Ruby ecosystem). You can install the dependencies with:
+
+```shell
+$ bundle install
+```
+
+You may also experience issues if your current directory contains spaces. Make sure
+that you put your project in a path that does not contain spaces!
+
+### Windows specific
+
+You may experience issues due to the maximum path length limit on Windows. You can
+put your repository at a short path, or you can
+[follow these instructions](https://www.autodesk.com/support/technical/article/caas/sfdcarticles/sfdcarticles/The-Windows-10-default-path-length-limitation-MAX-PATH-is-256-characters.html)
+to enable long path support.
+
+### macOS specific
+
+If you are on macOS, be sure to install the latest version of Ruby using [Homebrew](https://brew.sh/):
+
+```shell
+brew install ruby
+```
+
+Also make sure that this is the first Ruby on your `PATH`. The above command should give you instructions on how to do so.
+
+### Linux specific
+
+If you are on Linux, you may need to install some extra dependencies. On
+Debian or Ubuntu, you can use:
+
+```shell
+$ sudo apt install libsdl2-dev libsdl2-image-dev libsdl2-mixer-dev libsdl2-ttf-dev
+```
+
+On Fedora:
+
+```shell
+$ sudo dnf install SDL2-devel SDL2_image-devel SDL2_mixer-devel SDL2_ttf-devel
+```
 
 ## Implementation
 
