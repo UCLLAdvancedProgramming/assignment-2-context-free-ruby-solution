@@ -100,6 +100,11 @@ You can use [bundler](https://bundler.io/) to install the required packages
 $ bundle install
 ```
 
+You may experience issues due to the maximum path length limit on Windows. You
+put your repository at a short path, or you can
+[follow these instructions](https://www.autodesk.com/support/technical/article/caas/sfdcarticles/sfdcarticles/The-Windows-10-default-path-length-limitation-MAX-PATH-is-256-characters.html)
+to enable long path support.
+
 If you are on Linux, you may need to install some extra dependencies. On
 Debian or Ubuntu, you can use:
 
