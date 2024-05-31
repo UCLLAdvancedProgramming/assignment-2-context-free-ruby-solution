@@ -1,6 +1,6 @@
 startshape :spikes
 
-minsize 0.1
+minsize 0.2
 
 shape :spikes do
   4.times do |i|
