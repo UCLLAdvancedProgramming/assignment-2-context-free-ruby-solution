@@ -1,5 +1,8 @@
 # frozen_string_literal: true
 
+require_relative 'color'
+require_relative 'transform'
+
 module ContextFree
   ##
   # The Properties class describes the properties of a shape
