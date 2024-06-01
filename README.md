@@ -1,5 +1,7 @@
 # Assignment 2: Context Free Art in Ruby
 
+See [common mistakes](common_mistakes.md) for a list of common mistakes.
+
 [Context Free](https://www.contextfreeart.org/) "is a program that
 generates images from written instructions from written instructions
 called a grammar".
